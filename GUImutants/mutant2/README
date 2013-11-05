@@ -1,12 +1,20 @@
 MUTANT2
-In this mutant is introduced a user interface fault:
-The rotations widgets are not visible
+Fault category: GUI Structure and Aestheticism
+Fault: Incorrect state of widgets
+Failure description: Buttons are not visible after several actions
+WIMP/post-WIMP: WIMP
+Ad-hoc widgets involved: yes
+interactions: click, press
+Test case length: 4 (Select Dot Tool, Add Dot, Select Selection Mode, Select Dot)
+Minimal number of events to perform: 4 (press button, press canvas, press button, press canvas)
 
 The mutated file is net.sf.latexdraw.ui.PropertiesToolbarBuilder
 The mutated code is the operation compose.
 
 To produce the failure:
-1. Create a shape
-2. Select it
--> Rotation widgets are not visible in the bottom toolbar
+1. Select the dot tool
+2. Create a dot
+3. Activate the selection mode
+2. Select the created dot
+-> The rotation widgets are not visible in the bottom toolbar
 

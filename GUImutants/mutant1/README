@@ -3,7 +3,8 @@ Fault category: Data Presentation
 Fault: Incorrect data rendering
 Failure description: Rectangles are represented by ellipses
 WIMP/post-WIMP: POST-WIMP
-interaction: DnD
+Ad-hoc widgets involved: yes
+interactions: DnD, button click
 Test case length: 2 (Select Rectangle Tool, Add Rectangle)
 Minimal number of events to perform: 4 (press button, press canvas, move canvas, release canvas)
 

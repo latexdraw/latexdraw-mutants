@@ -1,0 +1,6 @@
+diff -r net.sf.latexdraw/src/main/net/sf/latexdraw/ui/PropertiesToolbarBuilder.java ../original/net.sf.latexdraw/src/main/net/sf/latexdraw/ui/PropertiesToolbarBuilder.java
+74,75c74
+< 		// MUTANT
+< //		widget.add(composeRotationToolbar(metaShapeCustomiser.getRotationCustomiser(), canvas));
+---
+> 		widget.add(composeRotationToolbar(metaShapeCustomiser.getRotationCustomiser(), canvas));
