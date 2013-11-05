@@ -1,0 +1,15 @@
+diff -r net.sf.latexdraw.mutant7/src/main/net/sf/latexdraw/instruments/Hand.scala ../original/net.sf.latexdraw/src/main/net/sf/latexdraw/instruments/Hand.scala
+74,75c74,75
+< 	//Mutant7
+< 	//override def interimFeedback() {
+---
+> 
+> 	override def interimFeedback() {
+77,79c77,79
+< 		//canvas.setTempUserSelectionBorder(null)
+< 		//canvas.setCursor(Cursor.getDefaultCursor)
+< 	//}
+---
+> 		canvas.setTempUserSelectionBorder(null)
+> 		canvas.setCursor(Cursor.getDefaultCursor)
+> 	}

@@ -1,12 +1,18 @@
 MUTANT7
-
-In this mutant is introduced a presentation fault: 
+Fault category: Feedback
+Fault: The temporary feedback provided all along the execution of long interactions is incorrect
+Failure description: the temporary rectangle used for helping the selection is not hidden when expected
+WIMP/post-WIMP: post-WIMP
+Ad-hoc widgets involved: yes
+interactions: DnD, button / menu click
+Test case length: 2 (Load file / import template, Selection shapes)
+Minimal number of events to perform: 4 (press button / menu, press canvas, move canvas, release canvas)
 
 The mutated file is package net.sf.latexdraw.instruments.Hand.
 The mutated code is the operation override def interimFeedback().
 
 To produce the failure:
-1. Draw a shape on canvas.
-2. Drag-and-drop onto the drawing area to select a shape.
+1. Load a template or a file
+1. Drag-and-drop on the drawing area to select a shape
+-> The temporary rectangle is still visible at the end of the selection.
 
-Actual result: The rectangle used for the interim feedback of the selection is not removed.

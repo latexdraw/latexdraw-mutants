@@ -2,7 +2,7 @@ MUTANT1
 Fault category: Data Presentation
 Fault: Incorrect data rendering
 Failure description: Rectangles are represented by ellipses
-WIMP/post-WIMP: POST-WIMP
+WIMP/post-WIMP: post-WIMP
 Ad-hoc widgets involved: yes
 interactions: DnD, button click
 Test case length: 2 (Select Rectangle Tool, Add Rectangle)
