@@ -1,11 +1,18 @@
 MUTANT5
-
-In this mutant is introduced a interim feedback fault: 
+Fault category: Feedback
+Fault: The temporary feedback provided all along the execution of long interactions is incorrect
+Failure description: Don't show the intermediary states when a shape has been drawn.
+WIMP/post-WIMP: post-WIMP
+Ad-hoc widgets involved: yes
+interactions: DnD, button click
+Test case length: 2 (Select Rectangle Tool, Add Rectangle)
+Minimal number of events to perform: 4 (press button, press canvas, move canvas, release canvas)
 
 The mutated file is net.sf.latexdraw.glib.ui.LCanvas.
 The mutated code is the operation setTempView.
 
 To produce the failure:
-1. Drag-and-drop onto the drawing area to draw a shape.
+1. Select the rectangle tool
+2. Drag-and-drop on the drawing area to draw a rectangle.
+-> The expected temporary rectangle shown during the creation of a rectangle is not visible.
 
-Actual result: Don't show the intermediary states when a shape has been drawn.

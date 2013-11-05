@@ -1,0 +1,20 @@
+diff -r net.sf.latexdraw.mutant5/src/main/net/sf/latexdraw/glib/ui/LCanvas.java ../original/net.sf.latexdraw/src/main/net/sf/latexdraw/glib/ui/LCanvas.java
+376,377c376
+< 		//Mutant5
+< 		//tempView.setValue(view);
+---
+> 		tempView.setValue(view);
+diff -r net.sf.latexdraw.mutant5/src/main/net/sf/latexdraw/instruments/Border.scala ../original/net.sf.latexdraw/src/main/net/sf/latexdraw/instruments/Border.scala
+140,142c140,142
+< 	//override def interimFeedback() {
+< 		//canvas.setCursor(Cursor.getDefaultCursor)
+< 	//}
+---
+> 	override def interimFeedback() {
+> 		canvas.setCursor(Cursor.getDefaultCursor)
+> 	}
+diff -r net.sf.latexdraw.mutant5/src/main/net/sf/latexdraw/instruments/Hand.scala ../original/net.sf.latexdraw/src/main/net/sf/latexdraw/instruments/Hand.scala
+76c76
+< 		//The rectangle used for the interim feedback of the selection is removed.
+---
+> 		// The rectangle used for the interim feedback of the selection is removed.
