@@ -1,0 +1,44 @@
+Seulement dans net.sf.latexdraw.mutant4/src/main/net/sf: .DS_Store
+diff -r net.sf.latexdraw.mutant4/src/main/net/sf/latexdraw/glib/ui/LCanvas.java ../original/net.sf.latexdraw/src/main/net/sf/latexdraw/glib/ui/LCanvas.java
+177c177
+< 		g.fillRect(0, 0, getWidth(), getHeight());
+---
+>     	g.fillRect(0, 0, getWidth(), getHeight());
+215,217c215
+<     		//Mutant4
+<     		//g.setColor(Color.GRAY);
+<     		g.setColor(Color.WHITE);
+---
+>     		g.setColor(Color.GRAY);
+diff -r net.sf.latexdraw.mutant4/src/main/net/sf/latexdraw/glib/ui/LMagneticGrid.java ../original/net.sf.latexdraw/src/main/net/sf/latexdraw/glib/ui/LMagneticGrid.java
+256c256
+<     		int base 		= (int)((int)(x/modulo)*modulo);
+---
+>     		int base 		= (int)(((int)(x/modulo))*modulo);
+258c258
+<     		if(x>modulo) x = x%(int)modulo;
+---
+>     		if(x>modulo) x = x%((int)modulo);
+266c266
+<     		base = (int)((int)(point.getY()/modulo)*modulo);
+---
+>     		base = (int)(((int)(point.getY()/modulo))*modulo);
+268c268
+<     		if(y>modulo) y = y%(int)modulo;
+---
+>     		if(y>modulo) y = y%((int)modulo);
+296,297c296,297
+< 			gap = ScaleRuler.getUnit()==Unit.CM ? ppc/10. : ppc*PSTricksConstants.INCH_VAL_CM/10.;
+< 			gap = gap-(int)gap>0.5? (int)gap+1 : (int)gap;
+---
+> 			gap = ScaleRuler.getUnit()==Unit.CM ? ppc/10. : (ppc*PSTricksConstants.INCH_VAL_CM)/10.;
+> 			gap = (gap-(int)gap)>0.5? ((int)gap)+1 : (int)gap;
+diff -r net.sf.latexdraw.mutant4/src/main/net/sf/latexdraw/instruments/EditingSelector.java ../original/net.sf.latexdraw/src/main/net/sf/latexdraw/instruments/EditingSelector.java
+567c567
+< 				instrument.pencil.textSetter.getTextField().getText()));
+---
+> 						instrument.pencil.textSetter.getTextField().getText()));
+573c573
+< 			interaction.getButton()==instrument.textB;
+---
+> 				interaction.getButton()==instrument.textB;

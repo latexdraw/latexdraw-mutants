@@ -1,0 +1,17 @@
+MUTANT4
+Fault category: Feedback
+Fault: The temporary feedback provided all along the execution of long interactions is incorrect
+Failure description: The interim rectangle showing the current selectin rectangle is not visible.
+WIMP/post-WIMP: post-WIMP
+Ad-hoc widgets involved: yes
+interactions: DnD
+Test case length: 1 (Select shape)
+Minimal number of events to perform: 3 (press canvas, move canvas, release canvas)
+
+The mutated file is net.sf.latexdraw.glib.ui.LCanvas.
+The mutated code is the operation paintViews
+
+To produce the failure:
+1. Drag-and-drop onto the drawing area
+-> The selection rectangle is not visible.
+
