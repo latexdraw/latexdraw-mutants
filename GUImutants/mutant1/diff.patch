@@ -1,0 +1,57 @@
+diff -r net.sf.latexdraw/src/main/net/sf/latexdraw/glib/views/Java2D/impl/LRectangleView.java ../original/net.sf.latexdraw/src/main/net/sf/latexdraw/glib/views/Java2D/impl/LRectangleView.java
+4a5
+> import net.sf.latexdraw.glib.models.interfaces.ILineArcShape;
+42,68c43,67
+< 		// MUTANT
+< 		LEllipseView.setEllipsePath(path, tlx, tly, width, height);
+< //		final double w2 = Math.max(1., width);
+< //		final double h2 = Math.max(1., height);
+< //
+< //		if(((ILineArcShape)shape).isRoundCorner()) {
+< //			final double diameter = Math.max(1., ((ILineArcShape)shape).getLineArc() * Math.min(w2, h2));
+< //			final double radius   = diameter/2.;
+< //
+< //			path.moveTo(tlx + radius, tly);
+< //			path.lineTo(tlx + w2 - radius, tly);
+< //			LEllipseView.curveQuarter(tlx+w2-diameter, tly, diameter, diameter, path, LEllipseView.POINTS[3]);
+< //			path.lineTo(tlx + width, tly + height - radius);
+< //			LEllipseView.curveQuarter(tlx+w2-diameter, tly+height-diameter, diameter, diameter, path, LEllipseView.POINTS[0]);
+< //			path.lineTo(tlx + radius, tly + height);
+< //			LEllipseView.curveQuarter(tlx, tly+h2-diameter, diameter, diameter, path, LEllipseView.POINTS[1]);
+< //			path.lineTo(tlx, tly + h2 - radius);
+< //			path.lineTo(tlx, tly + radius);
+< //			LEllipseView.curveQuarter(tlx, tly, diameter, diameter, path, LEllipseView.POINTS[2]);
+< //			path.closePath();
+< //		} else {
+< //			path.moveTo(tlx	  , tly);
+< //			path.lineTo(tlx+w2, tly);
+< //			path.lineTo(tlx+w2, tly+h2);
+< //			path.lineTo(tlx	  , tly+h2);
+< //			path.closePath();
+< //		}
+---
+> 		final double w2 = Math.max(1., width);
+> 		final double h2 = Math.max(1., height);
+> 		
+> 		if(((ILineArcShape)shape).isRoundCorner()) {
+> 			final double diameter = Math.max(1., ((ILineArcShape)shape).getLineArc() * Math.min(w2, h2));
+> 			final double radius   = diameter/2.;
+> 
+> 			path.moveTo(tlx + radius, tly);
+> 			path.lineTo(tlx + w2 - radius, tly);
+> 			LEllipseView.curveQuarter(tlx+w2-diameter, tly, diameter, diameter, path, LEllipseView.POINTS[3]);
+> 			path.lineTo(tlx + width, tly + height - radius);
+> 			LEllipseView.curveQuarter(tlx+w2-diameter, tly+height-diameter, diameter, diameter, path, LEllipseView.POINTS[0]);
+> 			path.lineTo(tlx + radius, tly + height);
+> 			LEllipseView.curveQuarter(tlx, tly+h2-diameter, diameter, diameter, path, LEllipseView.POINTS[1]);
+> 			path.lineTo(tlx, tly + h2 - radius);
+> 			path.lineTo(tlx, tly + radius);
+> 			LEllipseView.curveQuarter(tlx, tly, diameter, diameter, path, LEllipseView.POINTS[2]);
+> 			path.closePath();
+> 		} else {
+> 			path.moveTo(tlx	  , tly);
+> 			path.lineTo(tlx+w2, tly);
+> 			path.lineTo(tlx+w2, tly+h2);
+> 			path.lineTo(tlx	  , tly+h2);
+> 			path.closePath();
+> 		}
