@@ -1,0 +1,7 @@
+diff -r net.sf.latexdraw.mutant6/src/main/net/sf/latexdraw/glib/handlers/Handler.java ../original/net.sf.latexdraw/src/main/net/sf/latexdraw/glib/handlers/Handler.java
+56,58c56
+< 		//Mutant6
+< 		//colour 	= new Color(0, 0, 0, opacity);
+< 		colour 	= new Color(255, 255, 255, opacity);
+---
+> 		colour 	= new Color(0, 0, 0, opacity);

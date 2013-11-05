@@ -1,12 +1,18 @@
 MUTANT6
-
-In this mutant is introduced presentation fault: 
+Fault category: Data Presentation
+Fault: Incorrect data properties
+Failure description: Shape's handlers are not visible.
+WIMP/post-WIMP: POST-WIMP
+Ad-hoc widgets involved: yes
+interactions: DnD or press, menu click
+Test case length: 2 (Insert template, select shape)
+Minimal number of events to perform: 2 (menu click, press canvas)
 
 The mutated file is net.sf.latexdraw.glib.handlers.Handler.
 The mutated code is the operation Handler.
 
 To produce the failure:
-1. Draw a shape on canvas.
-2. Drag-and-drop onto the drawing area to select a shape.
+1. Load a template
+2. Drag-and-drop or press on the drawing area to select the rectangle
+-> The handlers are not visible
 
-Actual result: Shape's handlers are not colorful to show them up on canvas.
