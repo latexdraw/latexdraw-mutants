@@ -1,0 +1,7 @@
+diff -r net.sf.latexdraw/src/main/net/sf/latexdraw/instruments/ShapeRotationCustomiser.java ../original/net.sf.latexdraw/src/main/net/sf/latexdraw/instruments/ShapeRotationCustomiser.java
+97,99c97
+< 			// MUTANT
+< 			rotationField.setValueSafely(shape.getRotationAngle());
+< //			rotationField.setValueSafely(Math.toDegrees(shape.getRotationAngle()));
+---
+> 			rotationField.setValueSafely(Math.toDegrees(shape.getRotationAngle()));

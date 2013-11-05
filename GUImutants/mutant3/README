@@ -1,13 +1,18 @@
 MUTANT3
-In this mutant is introduced a data presentation fault:
-The rotation value displayed by the rotation field is in radian instead of in degree.
+Fault category: Data Presentation
+Fault: Incorrect data type or format
+Failure description: The rotation value displayed by the rotation field is in radian instead of in degree.
+WIMP/post-WIMP: POST-WIMP
+Ad-hoc widgets involved: yes
+interactions: DnD, button click
+Test case length: 2 (Load a file, Select Shape)
+Minimal number of events to perform: 4 (press button, select file, press button, press canvas)
 
 The mutated file is net.sf.latexdraw.instruments.ShapeRotationCustomiser
 The mutated code is the operation update.
 
 To produce the failure:
-1. Create a shape
-2. Select it
-3. Rotate it using the rotation handler
+1. Load the test file (testFile.svg)
+2. Select the loaded shape
 -> The data displayed in the rotation field is in radian.
 
