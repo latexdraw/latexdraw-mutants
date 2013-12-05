@@ -1,13 +1,18 @@
 MUTANT9
+Fault category: Action
+Fault: No action executed
+Failure description: The use of some handlers is not considered during the interaction-to-action conversion.
+WIMP/post-WIMP: post-WIMP
+Ad-hoc widgets involved: yes
+interactions: DnD, press, menu click
+Test case length: 3 (Import template, Select shape, Scale shape)
+Minimal number of events to perform: 5 (press menu, press canvas (select), press canvas (scale), move canvas, release canvas)
 
-In this mutant is introduced a interaction link fault: 
-
-The mutated file is package net.sf.latexdraw.instruments.Border.
-The mutated code is the operation setXGap in DnD2Scale class.
+The mutated file is net.sf.latexdraw.instruments.Border.scala.
+The mutated code is the operation setXGap in the class DnD2Scale.
 
 To produce the failure:
-1. Draw a shape on canvas
-2. Selecting a shape by drag-and-drop onto the drawing area
-3. Scaling a shape by using the scaling handler 
-
-Actual result: The shape is scaling only by manipulating the NE, L,SE arrows.
+1. Import a template
+2. Selecting a shape
+3. Scaling a shape by using a scaling handler 
+-> The shape cannot be scaled using the N, S, W, SW, and NW handlers.

@@ -1,0 +1,8 @@
+diff -r net.sf.latexdraw.mutant9/src/main/net/sf/latexdraw/instruments/Border.scala ../original/net.sf.latexdraw/src/main/net/sf/latexdraw/instruments/Border.scala
+718,720c718,719
+< 			//Mutant9
+< 			//case Position.NE | Position.SE | Position.EAST => xGap = tl.getX - p1.getX
+< 			//case _ => xGap = 0.0
+---
+> 			case Position.NE | Position.SE | Position.EAST => xGap = tl.getX - p1.getX
+> 			case _ => xGap = 0.0
