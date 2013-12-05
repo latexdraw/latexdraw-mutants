@@ -1,13 +1,18 @@
 MUTANT12
+Fault category: Action
+Fault: No action executed
+Failure description: the condition stating whether the interaction must provoke the deletion is not correct.
+WIMP/post-WIMP: post-WIMP
+Ad-hoc widgets involved: yes
+interactions: key pressure, menu click, pressure
+Test case length: 3 (Import template, select shape, delete shape)
+Minimal number of events to perform: 3 (press menu, press canvas, key press)
 
-In this mutant is introduced a interaction behavior fault: 
-
-The mutated file is package net.sf.latexdraw.instruments.ShaperDeleter
-The mutated code is the operation isConditionRespected in the KeyPressed2DeleteShapes abstract class.
+The mutated file is net.sf.latexdraw.instruments.ShaperDeleter.
+The mutated code is the operation isConditionRespected in the class KeyPressed2DeleteShapes.
 
 To produce the failure:
-1. Draw a shape on canvas
-2. Selecting a shape by drag-and-drop onto the drawing area
-3. Deleting a shape by using the Delete key.
-
-Actual result: The shape is not deleted by using Delete key.
+1. Import a template
+2. Select a shape
+3. Delete the selected shape using the key 'delete'
+-> The shape is not delete using the key 'delete'

@@ -1,0 +1,12 @@
+diff -r net.sf.latexdraw.mutant12/src/main/net/sf/latexdraw/instruments/ShapeDeleter.java ../original/net.sf.latexdraw/src/main/net/sf/latexdraw/instruments/ShapeDeleter.java
+149,150c149
+< 	 * Creates the link
+< 
+---
+> 	 * Creates the link.
+161,163c160
+< 		//return interaction.getKey()==KeyEvent.VK_DELETE && super.isConditionRespected();
+< 		//Mutant12
+< 		return interaction.getKey()!=KeyEvent.VK_DELETE && super.isConditionRespected();
+---
+> 		return interaction.getKey()==KeyEvent.VK_DELETE && super.isConditionRespected();
