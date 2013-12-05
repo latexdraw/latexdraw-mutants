@@ -1,13 +1,17 @@
 MUTANT11
+Fault category: Feedback
+Fault: Widget feedback
+Failure description: The interim feedback does not work properly
+WIMP/post-WIMP: post-WIMP
+Ad-hoc widgets involved: yes
+interactions: DnD, button click
+Test case length: 3 (Import template, Select Shape, Scale shape)
+Minimal number of events to perform: 5 (press menu, press canvas (select), press canvas (scale), move canvas, release canvas)
 
-In this mutant is introduced a interaction behavior fault: 
-
-The mutated file is package net.sf.latexdraw.instruments.Border.
-The mutated code is the operation override def interimFeedback().
+The mutated file is net.sf.latexdraw.instruments.Border.
+The mutated code is the operation interimFeedback.
 
 To produce the failure:
-1. Draw a shape on canvas
-2. Selecting a shape by drag-and-drop onto the drawing area
-3. Scaling a shape by using the scaling handler by manipulating North, South, East, West arrows
-
-Actual result: The shape is scaled only after the second click on those arrows.
+1. Import a template
+2. Scale a shape using the North, South, East, or West scaling handler 
+-> The interim feedback is not provided (the cursor does not change)

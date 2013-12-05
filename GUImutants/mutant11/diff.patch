@@ -1,0 +1,18 @@
+diff -r net.sf.latexdraw.mutant11/src/main/net/sf/latexdraw/instruments/Border.scala ../original/net.sf.latexdraw/src/main/net/sf/latexdraw/instruments/Border.scala
+772,773c772
+< 			//Mutant11
+< 			//case Position.EAST => instrument.canvas.setCursor(Cursor.getPredefinedCursor(Cursor.W_RESIZE_CURSOR))
+---
+> 			case Position.EAST => instrument.canvas.setCursor(Cursor.getPredefinedCursor(Cursor.W_RESIZE_CURSOR))
+775c774
+< 			//case Position.NORTH => instrument.canvas.setCursor(Cursor.getPredefinedCursor(Cursor.S_RESIZE_CURSOR))
+---
+> 			case Position.NORTH => instrument.canvas.setCursor(Cursor.getPredefinedCursor(Cursor.S_RESIZE_CURSOR))
+778c777
+< 			//case Position.SOUTH => instrument.canvas.setCursor(Cursor.getPredefinedCursor(Cursor.N_RESIZE_CURSOR))
+---
+> 			case Position.SOUTH => instrument.canvas.setCursor(Cursor.getPredefinedCursor(Cursor.N_RESIZE_CURSOR))
+780c779
+< 			//case Position.WEST => instrument.canvas.setCursor(Cursor.getPredefinedCursor(Cursor.E_RESIZE_CURSOR))
+---
+> 			case Position.WEST => instrument.canvas.setCursor(Cursor.getPredefinedCursor(Cursor.E_RESIZE_CURSOR))

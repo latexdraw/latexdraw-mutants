@@ -778,6 +778,7 @@ private sealed class DnD2Scale(ins : Border) extends Link[ScaleShapes, DnD, Bord
 			//case Position.SOUTH => instrument.canvas.setCursor(Cursor.getPredefinedCursor(Cursor.N_RESIZE_CURSOR))
 			case Position.SW => instrument.canvas.setCursor(Cursor.getPredefinedCursor(Cursor.NE_RESIZE_CURSOR))
 			//case Position.WEST => instrument.canvas.setCursor(Cursor.getPredefinedCursor(Cursor.E_RESIZE_CURSOR))
+			case _ =>
 		}
 	}
 
