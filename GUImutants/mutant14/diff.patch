@@ -1,0 +1,7 @@
+diff -r net.sf.latexdraw.mutant14/src/main/net/sf/latexdraw/instruments/ShapeDeleter.java ../original/net.sf.latexdraw/src/main/net/sf/latexdraw/instruments/ShapeDeleter.java
+73,75c73
+< 		//updateWidgets(false);
+< 		//Mutant14
+< 		updateWidgets(true);
+---
+> 		updateWidgets(false);

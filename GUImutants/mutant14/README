@@ -1,12 +1,15 @@
 MUTANT14
+Fault category:GUI Structure and Aestheticism
+Fault: Incorrect state of widgets
+Failure description:
+WIMP/post-WIMP: WIMP
+Ad-hoc widgets involved: yes
+interactions: DnD, button click
+Test case length: 0
+Minimal number of events to perform: 0
 
-In this mutant is introduced a presentation fault: 
-
-The mutated file is package net.sf.latexdraw.instruments.ShaperDeleter
-The mutated code is the operation setActivated(boolean):void
+The mutated file is net.sf.latexdraw.instruments.ShaperDeleter.
+The mutated code is the operation setActivated.
 
 To produce the failure:
-1. Draw a shape on canvas
-2. Selecting a shape by drag-and-drop onto the drawing area
-
-Actual result: The widget "Delete" only shows up when a shape is selected.
+-> The button 'delete', that should be visible but disable, is not visible.
