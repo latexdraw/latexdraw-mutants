@@ -1,0 +1,14 @@
+diff -r net.sf.latexdraw.mutant8/src/main/net/sf/latexdraw/glib/models/impl/LPoint.java ../original/net.sf.latexdraw/src/main/net/sf/latexdraw/glib/models/impl/LPoint.java
+128d127
+< 
+142c141
+< 			else if(LNumber.INSTANCE.equals(angle-3.*PI/2., 0.)) {
+---
+> 			else if(LNumber.INSTANCE.equals(angle-(3.*PI/2.), 0.)) {
+diff -r net.sf.latexdraw.mutant8/src/main/net/sf/latexdraw/instruments/Border.scala ../original/net.sf.latexdraw/src/main/net/sf/latexdraw/instruments/Border.scala
+589,591c589
+< 		//val p2 = DrawingTK.getFactory.createPoint(instrument.canvas.getZoomedPoint(interaction.getEndPt))
+< 		//Mutant8
+< 		val p2 = DrawingTK.getFactory.createPoint(instrument.canvas.getZoomedPoint(interaction.getStartPt))
+---
+> 		val p2 = DrawingTK.getFactory.createPoint(instrument.canvas.getZoomedPoint(interaction.getEndPt))
