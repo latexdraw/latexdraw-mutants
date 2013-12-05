@@ -1,0 +1,19 @@
+diff -r net.sf.latexdraw.mutant10/src/main/net/sf/latexdraw/instruments/Border.scala ../original/net.sf.latexdraw/src/main/net/sf/latexdraw/instruments/Border.scala
+717,721c717,718
+< 			//case Position.NW | Position.SW | Position.WEST => xGap = p1.getX - br.getX
+< 			//Mutant 10
+< 			case Position.NW | Position.SW | Position.WEST => xGap = p1.getX
+< 			//case Position.NE | Position.SE | Position.EAST => xGap = tl.getX - p1.getX
+< 			case Position.NE | Position.SE | Position.EAST => xGap = tl.getX
+---
+> 			case Position.NW | Position.SW | Position.WEST => xGap = p1.getX - br.getX
+> 			case Position.NE | Position.SE | Position.EAST => xGap = tl.getX - p1.getX
+728,732c725,726
+< 			//case Position.NW | Position.NE | Position.NORTH => yGap = p1.getY - br.getY
+< 			//Mutant 10
+< 			case Position.NW | Position.NE | Position.NORTH => yGap = p1.getY
+< 			//case Position.SW | Position.SE | Position.SOUTH => yGap = tl.getY - p1.getY
+< 			case Position.SW | Position.SE | Position.SOUTH => yGap = tl.getY
+---
+> 			case Position.NW | Position.NE | Position.NORTH => yGap = p1.getY - br.getY
+> 			case Position.SW | Position.SE | Position.SOUTH => yGap = tl.getY - p1.getY
