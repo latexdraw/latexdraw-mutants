@@ -1,0 +1,8 @@
+diff -r net.sf.latexdraw.mutant15/src/main/net/sf/latexdraw/instruments/ShapeDeleter.java ../original/net.sf.latexdraw/src/main/net/sf/latexdraw/instruments/ShapeDeleter.java
+72,73c72
+< 		//Mutant15
+< 		//super.setActivated(activated);
+---
+> 		super.setActivated(activated);
+86d84
+< 

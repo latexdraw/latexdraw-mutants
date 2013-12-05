@@ -1,12 +1,17 @@
 MUTANT15
+Fault category: GUI Structure and Aestheticism
+Fault: Incorrect state of widgets
+Failure description: A widget is not activated when required
+WIMP/post-WIMP: post-WIMP
+Ad-hoc widgets involved: yes
+interactions: menu pressure, pressure
+Test case length: 2 (Import template, select shape)
+Minimal number of events to perform: 2 (press menu, press canvas)
 
-In this mutant is introduced a interaction link fault: 
-
-The mutated file is package net.sf.latexdraw.instruments.ShaperDeleter
-The mutated code is the operation setActivated(boolean):void
+The mutated file is net.sf.latexdraw.instruments.ShaperDeleter.
+The mutated code is the operation setActivated.
 
 To produce the failure:
-1. Draw a shape on canvas
-2. Selecting a shape by drag-and-drop onto the drawing area
-
-Actual result: The widget "Delete" is not activated.
+1. Import a template
+2. Select a shape
+-> The widget "Delete" is not activated.
