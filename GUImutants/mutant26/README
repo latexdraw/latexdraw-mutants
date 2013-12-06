@@ -1,4 +1,12 @@
 MUTANT26
+Fault category: Reversibility
+Fault: Incorrect undo/redo
+Failure description: The operation redo to revert translate shapes does not work properly.
+WIMP/post-WIMP: post-WIMP
+Ad-hoc widgets involved: yes
+interactions: button click, press, DnD
+Test case length: 6 (Select Shape, Add Shape, Select Shape on canvas, Move Shape, Perform Undo, Perform Redo)
+Minimal number of events to perform: 8 (press button (select a shape), press button (selection mode), press canvas (selection), press canvas (DnD), move canvas, release canvas, press button (undo), press button (redo))
 
 In this mutant is introduced a reversible actions fault: 
 
@@ -10,5 +18,4 @@ To produce the failure:
 2. Select the shape
 3. Move the shape
 4. Perform undo action and then redo this action
-
-Actual result: The redo action does not lead to the correct state.
+-> The redo action does not lead to the correct state.

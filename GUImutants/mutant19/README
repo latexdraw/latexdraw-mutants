@@ -1,13 +1,18 @@
 MUTANT19
-
-In this mutant is introduced a data presentation fault: 
+Fault category: Action
+Fault: No action executed
+Failure description: The color of a shape's border is not modified.
+WIMP/post-WIMP: post-WIMP
+Ad-hoc widgets involved: yes
+interactions: menu/button click, press, DnD
+Test case length: 4 (Import a template, Select a shape, Select shape border properties, Modify color)
+Minimal number of events to perform: 8 (press menu, press canvas (select), move canvas, release canvas, press button - 4 times)
 
 The mutated file is package package net.sf.latexdraw.actions.shape.ModifyShapeProperty
 The mutated code is the operation isPropertySupported().
 
 To produce the failure:
-1. Draw a shape on canvas
-2. Select the shape
+1. Import a template
+2. Select a shape
 3. Modify its border of properties by changing the color of the border.
-
-Actual result: The color of its border is not changed according the selected value.
+-> The color of its border is not changed according the selected value.

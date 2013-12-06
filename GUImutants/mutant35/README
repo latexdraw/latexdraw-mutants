@@ -1,12 +1,17 @@
 MUTANT35
-
-In this mutant is introduced a interaction behavior fault: 
+Fault category: Action
+Fault: No action is executed
+Failure description: Any shape available in a toolbar is drawn.
+WIMP/post-WIMP: post-WIMP
+Ad-hoc widgets involved: yes
+interactions: DnD, button click
+Test case length: 2 (Select Shape, Add Shape)
+Minimal number of events to perform: 4 (press button, press canvas, move canvas, release canvas)
 
 The mutated file is package  net.sf.latexdraw.ui.UIBuilder.
 The mutated code is the setEventableToInstruments().
 
 To produce the failure:
-1. Select a shape style in the tool bar
+1. Select any shape style in the tool bar
 2. Drag and drop to draw a shape on canvas 
-
- Actual result:  The shape is not drawn.
+-> The shape is not drawn.

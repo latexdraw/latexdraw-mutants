@@ -1,6 +1,12 @@
 MUTANT17
-
-In this mutant is introduced a interaction behavior fault: 
+Fault category: Interaction behavior
+Fault: Incorrect behavior of a user interaction
+Failure description: Drawing a freehand style does not start in the selected position. 
+WIMP/post-WIMP: post-WIMP
+Ad-hoc widgets involved: yes
+interactions: DnD, button click
+Test case length: 2 (Select freehand, Add freehand)
+Minimal number of events to perform: 4 (press button, press canvas, move canvas, release canvas)
 
 The mutated file is package net.sf.latexdraw.instruments.Pencil
 The mutated code is the operation initAction() in the DnD2AddShape class
@@ -8,5 +14,4 @@ The mutated code is the operation initAction() in the DnD2AddShape class
 To produce the failure:
 1. Selecting the freehand on toolbar
 2. Drag-and-drop shortly on canvas to draw in freehand style.
-
-Actual result: A line is drawing incorrectly (it does not follow the drag and drop interaction).
+-> A line is drawing incorrectly (it does not follow the drag and drop interaction).

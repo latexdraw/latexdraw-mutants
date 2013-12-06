@@ -1,4 +1,12 @@
 MUTANT41
+Fault category: Action
+Fault: Incorrect action results
+Failure description: Zooming in/out reflects incorrectly in shapes over canvas. 
+WIMP/post-WIMP: post-WIMP
+Ad-hoc widgets involved: yes
+interactions: menu/button click 
+Test case length: 2 (Select a template, Zooming in)
+Minimal number of events to perform: 2 (press menu, press button/key press)
 
 In this mutant is introduced a interaction behavior fault: 
 
@@ -6,8 +14,6 @@ The mutated file is package net.sf.latexdraw.ui.LCanvas.
 The mutated code is the operation paintViews.
 
 To produce the failure:
-1. Draw a shape on canvas
-2. Perform zooming in (e.g., 125%) by clicking on the spinner widget or using shortcuts (crtl + mouse wheel) or entering the values on text field spinner.
-
- 
-Actual result: Zoom is performed incorrectly.
+1. Import a template
+2. Perform zooming in (e.g., 125%) by clicking on the spinner widget (or using shortcuts (crtl + mouse wheel) or entering the values on text field spinner).
+-> The corresponding template presentation is incorrectly, a shape with zoom value 125% is smaller than 100%.

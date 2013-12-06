@@ -1,13 +1,17 @@
 MUTANT25
-
-In this mutant is introduced a reversible actions fault: 
+Fault category: Reversibility
+Fault: Incorrect undo/redo
+Failure description: The operation undo to revert creating shapes does not work.
+WIMP/post-WIMP: post-WIMP
+Ad-hoc widgets involved: yes
+interactions: button click, press, DnD
+Test case length: 3 (Select Shape, Add Shape, Perform Undo)
+Minimal number of events to perform: 6 (press button (select a shape), press button (selection mode), press canvas, move canvas, release canvas, press button (undo))
 
 The mutated file is package net.sf.latexdraw.actions.shape.AddShape
 The mutated code is the operation undo().
 
 To produce the failure:
 1. Draw a shape on canvas
-2. Select the shape
-3. Perform undo action
-
-Actual result: The action to undo the shape drawing does not work.
+2. Perform undo action
+-> The action to undo the shape drawing does not work.

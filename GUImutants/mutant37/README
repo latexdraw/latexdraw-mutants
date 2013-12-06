@@ -1,11 +1,18 @@
 MUTANT37
-
-In this mutant is introduced a interaction behavior fault: 
+Fault category: Action
+Fault: No action is executed
+Failure description: Zooming in/out does not work. 
+WIMP/post-WIMP: post-WIMP
+Ad-hoc widgets involved: yes
+interactions: button (spinner) click, key press, Key press + mouse wheel
+Test case length: 1 (Zooming in/out)
+Minimal number of events to perform: 1 (press button/key press)
 
 The mutated file is package net.sf.latexdraw.ui.UIBuilder.
 The mutated code is the operation setEventableToInstruments().
 
 To produce the failure:
 1. Zoom in or zoom out by clicking on the spinner widget or using shortcuts (crtl + mouse wheel) or entering some values on text field spinner.
+->The zoom values are changed on the spinner widget but this action does not affect canvas.
 
-Actual result:  The zoom does not work.
+Observation: Shortcuts do not work on Mac.

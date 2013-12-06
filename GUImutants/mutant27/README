@@ -1,11 +1,16 @@
 MUTANT27
-
-In this mutant is introduced a interaction behavior fault: 
+Fault category: Action
+Fault: No action is executed
+Failure description: Drawing shapes that need DnD to add them (DnD2AddShape) does not work. 
+WIMP/post-WIMP: post-WIMP
+Ad-hoc widgets involved: yes
+interactions: DnD, button click
+Test case length: 2 (Select Shape, Add Shape)
+Minimal number of events to perform: 4 (press button, press canvas, move canvas, release canvas)
 
 The mutated file is package net.sf.latexdraw.instruments.Pencil
 The mutated code is the operation initialiseLinks().
 
 To produce the failure:
-1. Drag and drop to draw a shape on canvas 
-
-Actual result: Drag and drop to draw a shape does not work
+1. Drag and drop to draw a shape (e.g. rectangle, square, ellipse, circle, rhombus, triangle, arc, freehand) on canvas 
+-> Drag and drop on canvas to draw those shapes does not work

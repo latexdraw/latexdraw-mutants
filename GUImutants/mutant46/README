@@ -1,11 +1,17 @@
 MUTANT46
-
-In this mutant is introduced a presentation (GUI) fault: 
+Fault category: GUI Structure and Aestheticism
+Fault: Incorrect appearance of widgets
+Failure description: The shape's border is drawn with a dashed line.
+WIMP/post-WIMP: post-WIMP
+Ad-hoc widgets involved: yes
+interactions: DnD, button click
+Test case length: 2 (Select Shape, Add Shape)
+Minimal number of events to perform: 4 (press button, press canvas, move canvas, release canvas)
 
 The mutated file is package net.sf.latexdraw.glib.models.impl.LShape.
 The mutated code is the operation LShape.
 
 To produce the failure:
-1. Draw a shape on canvas 
- 
-Actual result:  The shape is drawn with a dashed line.
+1. Select a shape
+2. Draw a shape on canvas 
+->The shape is drawn with a dashed line.

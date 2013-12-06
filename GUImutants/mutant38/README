@@ -1,14 +1,22 @@
 MUTANT38
-
-In this mutant is introduced a reversible actions fault: 
+Fault category: Reversibility
+Fault: Incorrect undo/redo
+Failure description: No actions is reverted (menu and canvas).
+WIMP/post-WIMP: WIMP
+Ad-hoc widgets involved: no
+interactions: press menu, button click
+Test case length: 5 (Select Menu "Unit", Click inch, Perform Undo)
+Minimal number of events to perform: 2 (press menu, press button (undo))
 
 The mutated file is package net.sf.latexdraw.ui.UIBuilder.
 The mutated code is the operation getEventableToInstruments().
 
 To produce the failure:
-1. Draw a shape on canvas.
-2. Undo (by click on the toolbar) this drawing.
- 
-Actual result:  The undo does not work.
+1. Click on "Menu Unit"
+2. Select Unit "inch"
+2. Undo (by click on the toolbar).
+->The unit is still inch.
 
-Observation: Shortcuts for undo or redo actions do not work on Mac.
+Observations: 
+Shortcuts for undo or redo actions do not work on Mac.
+This mutant can be used to test Reversibility for both WIMP and post-WIMP.

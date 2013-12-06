@@ -1,6 +1,12 @@
 MUTANT31
-
-In this mutant is introduced a presentation (GUI) fault: 
+Fault category: GUI Structure and Aestheticism
+Fault: Incorrect state of widgets
+Failure description: A widget is not activated when required
+WIMP/post-WIMP: WIMP
+Ad-hoc widgets involved: no
+interactions: menu pressure
+Test case length: 1 (Select Unit)
+Minimal number of events to perform: 1 (press menu)
 
 The mutated file is package net.sf.latexdraw.ui.MenubarBuilder
 The mutated code is the operation composeDrawingMenu().
@@ -8,5 +14,4 @@ The mutated code is the operation composeDrawingMenu().
 To produce the failure:
 1. Open Draw menu
 2. Click on the Unit
- 
-Actual result:  The Unit submenu (i.e. cm, inch) is not show up. 
+-> The Unit submenu (i.e. cm, inch) is not show up. 

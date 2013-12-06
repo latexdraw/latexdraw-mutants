@@ -1,12 +1,16 @@
 MUTANT34
-
-In this mutant is introduced a interaction behavior fault: 
+Fault category: Action
+Fault: No action is executed
+Failure description: Zooming in/out values are not incremented or decremented. 
+WIMP/post-WIMP: WIMP
+Ad-hoc widgets involved: no
+interactions: button (spinner) click
+Test case length: 1 (Zooming in/out)
+Minimal number of events to perform: 1 (press button)
 
 The mutated file is package net.sf.latexdraw.glib.ui.LCanvas.
 The mutated code is the operation getZoomIncrement().
 
 To produce the failure:
-1. Zoom in or zoom out by entering some value or clicking on the spinner widget
-
- 
-Actual result:  The zoom does not work.
+1. Zoom in or zoom out by clicking on the spinner widget
+ -> The zoom values does not change on the spinner widget.

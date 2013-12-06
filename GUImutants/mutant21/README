@@ -1,6 +1,12 @@
 MUTANT21
-
-In this mutant is introduced a reversible actions fault: 
+Fault category: Reversibility
+Fault: Incorrect undo/redo
+Failure description: The operation redo does not remake the previous actions.
+WIMP/post-WIMP: post-WIMP
+Ad-hoc widgets involved: yes
+interactions: button click, press, DnD
+Test case length: 6 (Select a shape, Add a shape, Select a shape on canvas, Modify double border  property, Perform Undo, Perform Redo)
+Minimal number of events to perform: 8 (press button (select a shape), press button (selection mode), press canvas (selection), move canvas, release canvas, press button (modify shape properties), press button (undo), press button (redo))
 
 The mutated file is package package net.sf.latexdraw.actions.shape.ModifyShapeProperty
 The mutated code is the operation redo().
@@ -10,5 +16,4 @@ To produce the failure:
 2. Select the shape
 3. Modify its properties (e.g., border, double border, shadow, filling properties)
 4. Perform a undo action and then redo this action
-
-Actual result: The redo action does not work.
+->The redo action does not work.

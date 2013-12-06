@@ -1,6 +1,12 @@
 MUTANT16
-
-In this mutant is introduced a interaction link fault: 
+Fault category: Action
+Fault: Incorrect action results
+Failure description: The link (widget-to-action) to draw the selected shapes is not mapped.
+WIMP/post-WIMP: post-WIMP
+Ad-hoc widgets involved: yes
+interactions: DnD, button click
+Test case length: 2 (Select shape, Add a shape)
+Minimal number of events to perform: 4 (press button, press canvas (select), move canvas, release canvas)
 
 The mutated file is package net.sf.latexdraw.instruments.EditingSelector
 The mutated code is the operation initAction() in the ButtonPressed2DefineStylePencil class
@@ -8,5 +14,4 @@ The mutated code is the operation initAction() in the ButtonPressed2DefineStyleP
 To produce the failure:
 1. Selecting any kind of shape (e.g., rectangle, square, triangle, etc.)
 2. Drag-and-drop on canvas to draw the selected shape
-
-Actual result: The rectangle shape always is drawing.
+-> The rectangle shape always is drawing.

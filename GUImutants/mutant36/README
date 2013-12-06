@@ -1,7 +1,12 @@
 MUTANT36
-
-In this mutant is introduced a interaction behavior fault: 
-
+Fault category: Action
+Fault: No action is executed
+Failure description: Scrolling canvas by mouse does not work.
+WIMP/post-WIMP: WIMP
+Ad-hoc widgets involved: yes
+interactions: DnD, button click
+Test case length: 2 (Select Shape, Add Shape)
+Minimal number of events to perform: 5 (press button, press canvas, move canvas, release canvas, press mouse wheel)
 The mutated file is package  net.sf.latexdraw.ui.UIBuilder.
 The mutated code is the setEventableToInstruments().
 
@@ -9,5 +14,4 @@ To produce the failure:
 1. Select a shape style in toolbar
 2. Drag and drop to draw a shape on canvas until appears the scroll bars
 3. Perform  the horizontal or vertically scroll by mouse wheel.
-
- Actual result:  The scroll does not work.
+-> The scroll does not work.

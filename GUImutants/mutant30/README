@@ -1,13 +1,19 @@
 MUTANT30
-
-In this mutant is introduced a interaction link fault: 
+Fault category: Action
+Fault: Incorrect action results
+Failure description: The shadow properties of a shapes does not work propertly.
+WIMP/post-WIMP: post-WIMP
+Ad-hoc widgets involved: yes
+interactions: DnD, menu/button click
+Test case length: 4 (Load Template, Select Shape, Select shadow properties, Modify shadow properties)
+Minimal number of events to perform: 7 (press menu, press canvas, move canvas, release canvas, press button - 3 times)
 
 The mutated file is package package package net.sf.latexdraw.instruments.ShapeShadowCustomiser
 The mutated code is the operation initAction() in Spinner2SelectionShadow class.
 
 To produce the failure:
-1. Draw a shape on canvas 
-2. Select the shape
-3. Modify its shadow properties
- 
-Actual result:  Changing the size field modifies the angle field and vice-versa. 
+1. Import a template
+2. Select a shape
+3. Select shadow property
+4. Modify its shadow properties into size or angle fields.
+->Changing the size field also modifies the angle field and vice-versa. 

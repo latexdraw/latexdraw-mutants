@@ -1,11 +1,16 @@
 MUTANT40
-
-In this mutant is introduced a presentation fault: 
+Fault category: GUI Structure and Aestheticism
+Fault: Incorrect appearance of widgets
+Failure description: The tooltip does not correspond to the expected one.
+WIMP/post-WIMP: WIMP
+Ad-hoc widgets involved: no
+interactions: Mouse over
+Test case length: 1 (Mouse over the rectangle button)
+Minimal number of events to perform: 1 (Move over button) 
 
 The mutated file is package net.sf.latexdraw.ui.ToolbarBuilder.
 The mutated code is the operation composeRectangleLikeToolbar().
 
 To produce the failure:
 1. Pass the mouse over the rectangle icon on the tool bar to show its tooltip.
- 
-Actual result:  The tootip shows "Draw a square".
+->The tooltip shows "Draw a square".

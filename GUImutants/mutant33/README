@@ -1,6 +1,12 @@
 MUTANT33
-
-In this mutant is introduced a presentation fault: 
+Fault category: GUI Structure and Aestheticism
+Fault: Incorrect layout of widgets
+Failure description: The magnetic grid does not show up on canvas.
+WIMP/post-WIMP: post-WIMP
+Ad-hoc widgets involved: yes
+interactions: no
+Test case length: 1 (Start Latexdraw)
+Minimal number of events to perform: 0 
 
 The mutated file is package net.sf.latexdraw.glib.ui.LMagneticGrid.
 The mutated code is the operation setSize().
@@ -8,4 +14,4 @@ The mutated code is the operation setSize().
 To produce the failure:
 1. Open latexdraw
  
-Actual result:  The magnetic grid is not displayed.
+Actual result:  The magnetic grid on Canvas is not displayed.
