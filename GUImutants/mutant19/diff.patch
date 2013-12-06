@@ -1,0 +1,15 @@
+diff -r net.sf.latexdraw.mutant19/src/main/net/sf/latexdraw/actions/shape/ModifyShapeProperty.java ../original/net.sf.latexdraw/src/main/net/sf/latexdraw/actions/shape/ModifyShapeProperty.java
+175,177c175
+< 				//Mutant19
+< 				//case COLOUR_LINE:		return true;
+< 				case COLOUR_LINE:		return false;
+---
+> 				case COLOUR_LINE:		return true;
+diff -r net.sf.latexdraw.mutant19/src/main/net/sf/latexdraw/actions/shape/MoveBackForegroundShapes.scala ../original/net.sf.latexdraw/src/main/net/sf/latexdraw/actions/shape/MoveBackForegroundShapes.scala
+48d47
+< 
+87d85
+< 
+diff -r net.sf.latexdraw.mutant19/src/main/net/sf/latexdraw/instruments/ShapePositioner.java ../original/net.sf.latexdraw/src/main/net/sf/latexdraw/instruments/ShapePositioner.java
+109d108
+< 

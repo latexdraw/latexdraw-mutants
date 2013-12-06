@@ -1,0 +1,6 @@
+diff -r net.sf.latexdraw.mutant23/src/main/net/sf/latexdraw/actions/shape/ScaleShapes.scala ../original/net.sf.latexdraw/src/main/net/sf/latexdraw/actions/shape/ScaleShapes.scala
+96,97c96
+< 		//Mutant23
+< 		//sh.scale(oldWidth, oldHeight, _refPosition.get, bound)
+---
+> 		sh.scale(oldWidth, oldHeight, _refPosition.get, bound)

@@ -1,0 +1,6 @@
+diff -r net.sf.latexdraw.mutant16/src/main/net/sf/latexdraw/instruments/EditingSelector.java ../original/net.sf.latexdraw/src/main/net/sf/latexdraw/instruments/EditingSelector.java
+544,545c544
+< 		//Mutant16
+< 		//action.setPencil(instrument.pencil);
+---
+> 		action.setPencil(instrument.pencil);

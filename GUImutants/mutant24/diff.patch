@@ -1,0 +1,6 @@
+diff -r net.sf.latexdraw.mutant24/src/main/net/sf/latexdraw/actions/shape/RotateShapes.scala ../original/net.sf.latexdraw/src/main/net/sf/latexdraw/actions/shape/RotateShapes.scala
+70,71c70
+< 		//Mutant 24
+< 		//rotateShapes(_rotationAngle)
+---
+> 		rotateShapes(_rotationAngle)

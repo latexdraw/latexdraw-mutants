@@ -1,0 +1,7 @@
+diff -r net.sf.latexdraw.mutant13/src/main/net/sf/latexdraw/instruments/ShapeDeleter.java ../original/net.sf.latexdraw/src/main/net/sf/latexdraw/instruments/ShapeDeleter.java
+139,141c139
+< 		//return selection!=null && !selection.shapes().isEmpty();
+< 		//Mutant13
+< 		return selection==null && !selection.shapes().isEmpty();
+---
+> 		return selection!=null && !selection.shapes().isEmpty();

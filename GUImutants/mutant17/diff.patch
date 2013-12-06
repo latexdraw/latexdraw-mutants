@@ -1,0 +1,7 @@
+diff -r net.sf.latexdraw.mutant17/src/main/net/sf/latexdraw/instruments/Pencil.java ../original/net.sf.latexdraw/src/main/net/sf/latexdraw/instruments/Pencil.java
+437,439c437
+< 					//((IFreehand)shape).getPtAt(0).setPoint(pt.getX(), pt.getY());
+< 					//Mutant17
+< 					((IFreehand)shape).getPtAt(0).setPoint(pt.getY(), pt.getX());
+---
+> 					((IFreehand)shape).getPtAt(0).setPoint(pt.getX(), pt.getY());

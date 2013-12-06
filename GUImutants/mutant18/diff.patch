@@ -1,0 +1,7 @@
+diff -r net.sf.latexdraw.mutant18/src/main/net/sf/latexdraw/instruments/Pencil.java ../original/net.sf.latexdraw/src/main/net/sf/latexdraw/instruments/Pencil.java
+458,460c458
+< 		//final IPoint startPt= instrument.getAdaptedPoint(interaction.getStartPt());
+< 		//Mutant18
+< 		final IPoint startPt= instrument.getAdaptedPoint(interaction.getEndPt());
+---
+> 		final IPoint startPt= instrument.getAdaptedPoint(interaction.getStartPt());

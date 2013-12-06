@@ -1,0 +1,6 @@
+diff -r net.sf.latexdraw.mutant21/src/main/net/sf/latexdraw/actions/shape/ModifyShapeProperty.java ../original/net.sf.latexdraw/src/main/net/sf/latexdraw/actions/shape/ModifyShapeProperty.java
+81,82c81
+< 		//Mutant21
+< 		//applyValue(value);
+---
+> 		applyValue(value);

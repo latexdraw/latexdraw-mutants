@@ -1,0 +1,6 @@
+diff -r net.sf.latexdraw.mutant20/src/main/net/sf/latexdraw/actions/shape/ModifyShapeProperty.java ../original/net.sf.latexdraw/src/main/net/sf/latexdraw/actions/shape/ModifyShapeProperty.java
+74,75c74
+< 		//Mutant20
+< 		//property.setPropertyValueList(shapes, oldValue);
+---
+> 		property.setPropertyValueList(shapes, oldValue);
