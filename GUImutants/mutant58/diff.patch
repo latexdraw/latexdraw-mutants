@@ -1,0 +1,31 @@
+diff -crB //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/actions/SaveDrawing.java src/main/net/sf/latexdraw/actions/SaveDrawing.java
+*** //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/actions/SaveDrawing.java	Fri Nov 22 11:05:48 2013
+--- src/main/net/sf/latexdraw/actions/SaveDrawing.java	Sun Dec  8 18:16:09 2013
+***************
+*** 70,78 ****
+  			if(ui.isModified()) {
+  				saveAs = true;
+  				switch(showAskModificationsDialog(ui)) {
+  					case JOptionPane.NO_OPTION: // exit
+! 						quit();
+! 						break;
+  					case JOptionPane.YES_OPTION: // save + exit
+  						final File f = showDialog(fileChooser, saveAs, ui, file);
+  						if(f!=null) {
+--- 70,85 ----
+  			if(ui.isModified()) {
+  				saveAs = true;
+  				switch(showAskModificationsDialog(ui)) {
++ 					//Mutant58
+  					case JOptionPane.NO_OPTION: // exit
+! 						//quit();
+! 						final File fmutant = showDialog(fileChooser, saveAs, ui, file);
+! 						if(fmutant!=null) {
+! 							file = fmutant;
+! 							super.doActionBody();
+! 							quit();
+! 						}
+! 					break;
+  					case JOptionPane.YES_OPTION: // save + exit
+  						final File f = showDialog(fileChooser, saveAs, ui, file);
+  						if(f!=null) {

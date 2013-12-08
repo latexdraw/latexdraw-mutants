@@ -1,0 +1,19 @@
+MUTANT58
+Fault category: Action
+Fault: Incorrect action executed
+Failure description: Incorrect window dialog is open.
+WIMP/post-WIMP: WIMP
+Ad-hoc widgets involved: yes
+interactions: button click, canvas click
+Test case length: 3 (Select dot, Draw dot, Select Close button)
+Minimal number of events to perform: 4 (press button, press canvas, press button, press button (no))
+
+The mutated file is package package net.sf.latexdraw.actions.SaveDrawing.
+The mutated code is the operation doActionBody() .
+
+To produce the failure:
+1. Clicking on toolbar to select a dot style
+2. Draw a dot on canvas
+3. Close the file
+4. Click on "no" to not save the drawing
+-> A dialog window asking to save that drawing is open.
