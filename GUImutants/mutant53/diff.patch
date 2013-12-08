@@ -1,0 +1,22 @@
+diff -crB //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/ui/LFrame.java src/main/net/sf/latexdraw/ui/LFrame.java
+*** //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/ui/LFrame.java	Fri Nov 22 11:05:48 2013
+--- src/main/net/sf/latexdraw/ui/LFrame.java	Sun Dec  8 15:55:12 2013
+***************
+*** 245,251 ****
+  		try { scroller		= new Scroller(canvas); }
+  		catch(final IllegalArgumentException ex) {BadaboomCollector.INSTANCE.add(ex); }
+  		try { zoomer		= new WidgetZoomer(canvas, true, true, LResources.ZOOM_DEFAULT_ICON, LangTool.INSTANCE.getStringLaTeXDrawFrame("LaTeXDrawFrame.113"),
+! 				new Dimension(55, 28), LangTool.INSTANCE.getString19("ShortcutsFrame.30"), true); }
+  		catch(final IllegalArgumentException ex) {BadaboomCollector.INSTANCE.add(ex); }
+  		try { textSetter	= new TextSetter(layeredPanel); }
+  		catch(final IllegalArgumentException ex) {BadaboomCollector.INSTANCE.add(ex); }
+--- 245,253 ----
+  		try { scroller		= new Scroller(canvas); }
+  		catch(final IllegalArgumentException ex) {BadaboomCollector.INSTANCE.add(ex); }
+  		try { zoomer		= new WidgetZoomer(canvas, true, true, LResources.ZOOM_DEFAULT_ICON, LangTool.INSTANCE.getStringLaTeXDrawFrame("LaTeXDrawFrame.113"),
+! 				//new Dimension(55, 28), LangTool.INSTANCE.getString19("ShortcutsFrame.30"), true); }
+! 				//Mutant53
+! 				new Dimension(15, 15), LangTool.INSTANCE.getString19("ShortcutsFrame.30"), true); }
+  		catch(final IllegalArgumentException ex) {BadaboomCollector.INSTANCE.add(ex); }
+  		try { textSetter	= new TextSetter(layeredPanel); }
+  		catch(final IllegalArgumentException ex) {BadaboomCollector.INSTANCE.add(ex); }
