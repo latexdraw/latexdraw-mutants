@@ -1,0 +1,16 @@
+MUTANT54
+Fault category: GUI Structure and Aestheticism
+Fault: Incorrect appearance of widgets
+Failure description: Incorrect spelling in the widget label.
+WIMP/post-WIMP: WIMP
+Ad-hoc widgets involved: no
+interactions: no
+Test case length: 1 (Start Latexdraw)
+Minimal number of events to perform: 0 
+
+The mutated file is package net.sf.latexdraw.ui.UIBuilder.
+The mutated code is the operation compose().
+
+To produce the failure:
+1. Open latexdraw
+-> Widget label is "Drawning" instead of "Drawing".

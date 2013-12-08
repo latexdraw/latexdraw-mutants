@@ -1,0 +1,22 @@
+diff -crB //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/ui/UIBuilder.java src/main/net/sf/latexdraw/ui/UIBuilder.java
+*** //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/ui/UIBuilder.java	Fri Nov 22 11:05:48 2013
+--- src/main/net/sf/latexdraw/ui/UIBuilder.java	Sun Dec  8 16:13:06 2013
+***************
+*** 139,145 ****
+  		if(progressBar!=null) progressBar.addToProgressBar(5);
+  
+  		/* Creation of the tabbed pane. */
+! 		widget.tabbedPanel.addTab("Drawing", drawingArea);
+  		widget.tabbedPanel.addTab("PST", widget.getCodePanel());
+  
+  		statusPanel.setLayout(new BoxLayout(statusPanel, BoxLayout.LINE_AXIS));
+--- 139,147 ----
+  		if(progressBar!=null) progressBar.addToProgressBar(5);
+  
+  		/* Creation of the tabbed pane. */
+! 		//widget.tabbedPanel.addTab("Drawing", drawingArea);
+! 		//Mutant54
+! 		widget.tabbedPanel.addTab("Drawning", drawingArea);
+  		widget.tabbedPanel.addTab("PST", widget.getCodePanel());
+  
+  		statusPanel.setLayout(new BoxLayout(statusPanel, BoxLayout.LINE_AXIS));
