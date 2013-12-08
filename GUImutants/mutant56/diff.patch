@@ -1,0 +1,21 @@
+diff -crB //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/actions/SaveDrawing.java src/main/net/sf/latexdraw/actions/SaveDrawing.java
+*** //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/actions/SaveDrawing.java	Fri Nov 22 11:05:48 2013
+--- src/main/net/sf/latexdraw/actions/SaveDrawing.java	Sun Dec  8 17:17:33 2013
+***************
+*** 91,97 ****
+  			else quit();
+  		else {
+  			if(file==null)
+! 				file = showDialog(fileChooser, saveAs, ui, file);
+  			if(file==null)
+  				ok = false;
+  			else
+--- 91,98 ----
+  			else quit();
+  		else {
+  			if(file==null)
+! 				//Mutant56
+! 				//file = showDialog(fileChooser, saveAs, ui, file);
+  			if(file==null)
+  				ok = false;
+  			else

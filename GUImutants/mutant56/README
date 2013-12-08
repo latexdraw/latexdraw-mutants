@@ -1,0 +1,17 @@
+MUTANT56
+
+Fault category: Action
+Fault: No action executed
+Failure description: Clicking on the menu item has not effect.
+WIMP/post-WIMP: WIMP
+Ad-hoc widgets involved: no
+interactions: menu click
+Test case length: 1 (Select Menu item "Save" or "Save drawing as")
+Minimal number of events to perform: 1 (press menu)
+
+The mutated file is package package net.sf.latexdraw.actions.SaveDrawing.
+The mutated code is the operation doActionBody() .
+
+To produce the failure:
+1. Click on menu item "Save" or "Save drawing as"
+-> The window to save a file is not show up.
