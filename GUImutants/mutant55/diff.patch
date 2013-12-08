@@ -1,0 +1,21 @@
+diff -crB //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/ui/MenubarBuilder.java src/main/net/sf/latexdraw/ui/MenubarBuilder.java
+*** //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/ui/MenubarBuilder.java	Fri Nov 22 11:05:48 2013
+--- src/main/net/sf/latexdraw/ui/MenubarBuilder.java	Sun Dec  8 16:46:00 2013
+***************
+*** 96,102 ****
+  
+  	protected void composeEditMenu() {
+  		editMenu = new MMenu(LangTool.INSTANCE.getStringLaTeXDrawFrame("LaTeXDrawFrame.89"), true); //$NON-NLS-1$
+! 		editMenu.add(frame.paster.getCutMenu());
+  		editMenu.add(frame.paster.getCopyMenu());
+  		editMenu.add(frame.paster.getPasteMenu());
+  		editMenu.addSeparator();
+--- 96,103 ----
+  
+  	protected void composeEditMenu() {
+  		editMenu = new MMenu(LangTool.INSTANCE.getStringLaTeXDrawFrame("LaTeXDrawFrame.89"), true); //$NON-NLS-1$
+! 		//Mutant55
+! 		//editMenu.add(frame.paster.getCutMenu());
+  		editMenu.add(frame.paster.getCopyMenu());
+  		editMenu.add(frame.paster.getPasteMenu());
+  		editMenu.addSeparator();

@@ -1,0 +1,16 @@
+MUTANT55
+Fault category: GUI Structure and Aestheticism
+Fault: Incorrect state of widgets
+Failure description: Menu item is not activated.
+WIMP/post-WIMP: WIMP
+Ad-hoc widgets involved: no
+interactions: menu click
+Test case length: 1 (Select menu)
+Minimal number of events to perform: 1 (press menu) 
+
+The mutated file is package net.sf.latexdraw.ui.MenubarBuilder.
+The mutated code is the operation composeEditMenu().
+
+To produce the failure:
+1. Select menu "Edit"
+-> The menu item "cut" is not activated.
