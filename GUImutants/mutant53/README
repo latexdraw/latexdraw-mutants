@@ -1,0 +1,16 @@
+MUTANT53
+Fault category: GUI Structure and Aestheticism
+Fault: Incorrect layout of widgets
+Failure description: The dimensions of the button "zoom" are incorrectly.
+WIMP/post-WIMP: WIMP
+Ad-hoc widgets involved: no
+interactions: no
+Test case length: 1 (Start Latexdraw)
+Minimal number of events to perform: 0 
+
+The mutated file is package net.sf.latexdraw.ui.LFrame.
+The mutated code is the operation instantiateInstruments().
+
+To produce the failure:
+1. Open latexdraw
+ ->The button zoom is so small that it is impossible to enter some value.
