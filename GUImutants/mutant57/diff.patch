@@ -1,0 +1,41 @@
+diff -crB //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/actions/SaveDrawing.java src/main/net/sf/latexdraw/actions/SaveDrawing.java
+*** //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/actions/SaveDrawing.java	Fri Nov 22 11:05:48 2013
+--- src/main/net/sf/latexdraw/actions/SaveDrawing.java	Sun Dec  8 17:55:55 2013
+***************
+*** 70,85 ****
+  			if(ui.isModified()) {
+  				saveAs = true;
+  				switch(showAskModificationsDialog(ui)) {
+! 					case JOptionPane.NO_OPTION: // exit
+  						quit();
+  						break;
+! 					case JOptionPane.YES_OPTION: // save + exit
+! 						final File f = showDialog(fileChooser, saveAs, ui, file);
+! 						if(f!=null) {
+! 							file = f;
+! 							super.doActionBody();
+  							quit();
+! 						}
+  						break;
+  					case JOptionPane.CANCEL_OPTION:
+  						ok = false;
+--- 70,88 ----
+  			if(ui.isModified()) {
+  				saveAs = true;
+  				switch(showAskModificationsDialog(ui)) {
+! 					//Mutant57
+! 					//case JOptionPane.NO_OPTION: // exit
+! 					case JOptionPane.YES_OPTION: //
+  						quit();
+  						break;
+! 					//case JOptionPane.YES_OPTION: // save + exit
+! 					case JOptionPane.NO_OPTION:
+! 						//final File f = showDialog(fileChooser, saveAs, ui, file);
+! 						//if(f!=null) {
+! 							//file = f;
+! 							//super.doActionBody();
+  							quit();
+! 						//}
+  						break;
+  					case JOptionPane.CANCEL_OPTION:
+  						ok = false;
