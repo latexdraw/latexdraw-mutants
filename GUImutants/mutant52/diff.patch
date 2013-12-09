@@ -1,0 +1,22 @@
+diff -crB //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/instruments/TextSetter.java src/main/net/sf/latexdraw/instruments/TextSetter.java
+*** //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/instruments/TextSetter.java	Fri Nov 22 11:05:48 2013
+--- src/main/net/sf/latexdraw/instruments/TextSetter.java	Fri Nov 22 11:05:48 2013
+***************
+*** 174,180 ****
+  		int key = interaction.getKey();
+  		// It is useless to check if another key is pressed because if it is the case, the interaction
+  		// is in state keyPressed.
+! 		return (key==KeyEvent.VK_ENTER && instrument.textField.getText().length()>0) || key==KeyEvent.VK_ESCAPE;
+  	}
+  }
+  
+--- 174,182 ----
+  		int key = interaction.getKey();
+  		// It is useless to check if another key is pressed because if it is the case, the interaction
+  		// is in state keyPressed.
+! 		//return key==KeyEvent.VK_ENTER && instrument.textField.getText().length()>0 || key==KeyEvent.VK_ESCAPE;
+! 		//Mutant52
+! 		return key==KeyEvent.VK_ENTER && instrument.textField.getText().length()>0;
+  	}
+  }
+  

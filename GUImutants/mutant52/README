@@ -1,12 +1,18 @@
 MUTANT52
-
-In this mutant is introduced a abort interaction fault: 
+Fault category: Reversibility
+Fault: Reverting current interaction
+Failure description: Interaction is not aborted.
+WIMP/post-WIMP: post-WIMP
+Ad-hoc widgets involved: yes
+interactions: key press, button click
+Test case length: 2 (Select Text, Add Text)
+Minimal number of events to perform: 2 (press button, press key)
 
 The mutated file is package  net.sf.latexdraw.instruments.TextSetter.
 The mutated code is the operation isConditionRespected() in the KeyPress2Desactivate class.
 
 To produce the failure:
-1. Typing some text on canvas
-2. Press "ESC" key to abort
- 
-Actual result: The text is not deleted (i.e. typing is not aborted).
+1. Select Text style
+2. Typing some text on canvas
+3. Press "ESC" key to abort
+->The text is not deleted (i.e. typing is not aborted).
