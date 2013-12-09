@@ -1,0 +1,60 @@
+diff -crB //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/ui/MenubarBuilder.java src/main/net/sf/latexdraw/ui/MenubarBuilder.java
+*** //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/ui/MenubarBuilder.java	Fri Nov 22 11:05:48 2013
+--- src/main/net/sf/latexdraw/ui/MenubarBuilder.java	Fri Nov 22 11:05:45 2013
+***************
+*** 87,94 ****
+  		drawingMenu.addSeparator();
+  		drawingMenu.add(frame.templateManager.templateMenu());
+  		drawingMenu.add(unitMenu);
+! 		unitMenu.add(frame.scaleRulersCustomiser.getUnitCmItem());
+! 		unitMenu.add(frame.scaleRulersCustomiser.getUnitInchItem());
+  
+  		frame.exporter.getExportMenu().add(frame.templateManager.exportTemplateMenu());
+  	}
+--- 87,95 ----
+  		drawingMenu.addSeparator();
+  		drawingMenu.add(frame.templateManager.templateMenu());
+  		drawingMenu.add(unitMenu);
+! 		//Mutant31
+! 		//unitMenu.add(frame.scaleRulersCustomiser.getUnitCmItem());
+! 		//unitMenu.add(frame.scaleRulersCustomiser.getUnitInchItem());
+  
+  		frame.exporter.getExportMenu().add(frame.templateManager.exportTemplateMenu());
+  	}
+diff -crB //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/ui/ScaleRuler.java src/main/net/sf/latexdraw/ui/ScaleRuler.java
+*** //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/ui/ScaleRuler.java	Fri Nov 22 11:05:48 2013
+--- src/main/net/sf/latexdraw/ui/ScaleRuler.java	Fri Nov 22 11:05:45 2013
+***************
+*** 172,178 ****
+  				ppc*=PSTricksConstants.INCH_VAL_CM;
+  
+  			// If the ppc is not to small sub-lines are drawn.
+! 	    	if(ppc>(MIN_PCC_SUBLINES/zoom)) {
+  	    		final double ppc10 			= ppc/10.;
+  	    		final double halfSizeZoomed = sizeZoomed/2.;
+  
+--- 172,178 ----
+  				ppc*=PSTricksConstants.INCH_VAL_CM;
+  
+  			// If the ppc is not to small sub-lines are drawn.
+! 	    	if(ppc>MIN_PCC_SUBLINES/zoom) {
+  	    		final double ppc10 			= ppc/10.;
+  	    		final double halfSizeZoomed = sizeZoomed/2.;
+  
+***************
+*** 181,187 ****
+  	    				drawLine(g2, j, halfSizeZoomed, sizeZoomed);
+  	    	}
+  
+! 	    	// Major lines of the ruler are drawn.
+  	    	for(i=start; i<lgth;i+=ppc)
+  	    		drawLine(g2, i, 0., sizeZoomed);
+  		}
+--- 181,187 ----
+  	    				drawLine(g2, j, halfSizeZoomed, sizeZoomed);
+  	    	}
+  
+! 	    	//Major lines of the ruler are drawn.
+  	    	for(i=start; i<lgth;i+=ppc)
+  	    		drawLine(g2, i, 0., sizeZoomed);
+  		}

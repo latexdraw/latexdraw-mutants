@@ -1,0 +1,21 @@
+diff -crB //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/ui/UIBuilder.java src/main/net/sf/latexdraw/ui/UIBuilder.java
+*** //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/ui/UIBuilder.java	Fri Nov 22 11:05:48 2013
+--- src/main/net/sf/latexdraw/ui/UIBuilder.java	Fri Nov 22 11:05:45 2013
+***************
+*** 177,183 ****
+  		widget.scroller.addEventable(canvas);
+  		widget.editingSelector.addEventable(toolbar);
+  		widget.hand.addEventable(canvas);
+! 		widget.pencil.addEventable(canvas);
+  		widget.exporter.addEventable(toolbar);
+  		widget.exporter.addEventable(widget.exporter.getExportMenu());
+  		widget.scaleRulersCustomiser.addEventable(menubarBuilder.displayMenu);
+--- 177,184 ----
+  		widget.scroller.addEventable(canvas);
+  		widget.editingSelector.addEventable(toolbar);
+  		widget.hand.addEventable(canvas);
+! 		//Mutant35
+! 		//widget.pencil.addEventable(canvas);
+  		widget.exporter.addEventable(toolbar);
+  		widget.exporter.addEventable(widget.exporter.getExportMenu());
+  		widget.scaleRulersCustomiser.addEventable(menubarBuilder.displayMenu);

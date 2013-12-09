@@ -1,0 +1,21 @@
+diff -crB //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/ui/UIBuilder.java src/main/net/sf/latexdraw/ui/UIBuilder.java
+*** //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/ui/UIBuilder.java	Fri Nov 22 11:05:48 2013
+--- src/main/net/sf/latexdraw/ui/UIBuilder.java	Fri Nov 22 11:05:46 2013
+***************
+*** 186,192 ****
+  		widget.gridCustomiser.addEventable(toolbarBuilder.magneticGridB.getToolbar());
+  		widget.helper.addEventable(menubarBuilder.helpMenu);
+  		setGlobalShortcutEventable(widget.undoManager, canvas);
+! 		setGlobalShortcutEventable(widget.zoomer, canvas);
+  		setGlobalShortcutEventable(widget.deleter, canvas);
+  		setGlobalShortcutEventable(widget.paster, canvas);
+  		setGlobalShortcutEventable(widget.fileLoader, canvas);
+--- 186,193 ----
+  		widget.gridCustomiser.addEventable(toolbarBuilder.magneticGridB.getToolbar());
+  		widget.helper.addEventable(menubarBuilder.helpMenu);
+  		setGlobalShortcutEventable(widget.undoManager, canvas);
+! 		//Mutant37
+! 		//setGlobalShortcutEventable(widget.zoomer, canvas);
+  		setGlobalShortcutEventable(widget.deleter, canvas);
+  		setGlobalShortcutEventable(widget.paster, canvas);
+  		setGlobalShortcutEventable(widget.fileLoader, canvas);

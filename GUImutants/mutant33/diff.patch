@@ -1,0 +1,83 @@
+diff -crB //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/glib/ui/LMagneticGrid.java src/main/net/sf/latexdraw/glib/ui/LMagneticGrid.java
+*** //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/glib/ui/LMagneticGrid.java	Fri Nov 22 11:05:48 2013
+--- src/main/net/sf/latexdraw/glib/ui/LMagneticGrid.java	Fri Nov 22 11:05:45 2013
+***************
+*** 253,261 ****
+      		double modulo 	= getMagneticGridGap();
+      		double x 		= point.getX();
+      		double y 		= point.getY();
+!     		int base 		= (int)(((int)(x/modulo))*modulo);
+  
+!     		if(x>modulo) x = x%((int)modulo);
+  
+      		double res = modulo-x;
+      		x = base;
+--- 253,261 ----
+      		double modulo 	= getMagneticGridGap();
+      		double x 		= point.getX();
+      		double y 		= point.getY();
+!     		int base 		= (int)((int)(x/modulo)*modulo);
+  
+!     		if(x>modulo) x = x%(int)modulo;
+  
+      		double res = modulo-x;
+      		x = base;
+***************
+*** 263,271 ****
+      		if(res<modulo/2.) x+=modulo;
+  
+      		point.setX((int)x);
+!     		base = (int)(((int)(point.getY()/modulo))*modulo);
+  
+!     		if(y>modulo) y = y%((int)modulo);
+  
+      		res = modulo-y;
+      		y = base;
+--- 263,271 ----
+      		if(res<modulo/2.) x+=modulo;
+  
+      		point.setX((int)x);
+!     		base = (int)((int)(point.getY()/modulo)*modulo);
+  
+!     		if(y>modulo) y = y%(int)modulo;
+  
+      		res = modulo-y;
+      		y = base;
+***************
+*** 293,300 ****
+  			gap = getGridSpacing();
+  		else {
+  			final double ppc = canvas.getPPCDrawing();
+! 			gap = ScaleRuler.getUnit()==Unit.CM ? ppc/10. : (ppc*PSTricksConstants.INCH_VAL_CM)/10.;
+! 			gap = (gap-(int)gap)>0.5? ((int)gap)+1 : (int)gap;
+  		}
+  
+  		return gap;
+--- 293,300 ----
+  			gap = getGridSpacing();
+  		else {
+  			final double ppc = canvas.getPPCDrawing();
+! 			gap = ScaleRuler.getUnit()==Unit.CM ? ppc/10. : ppc*PSTricksConstants.INCH_VAL_CM/10.;
+! 			gap = gap-(int)gap>0.5? (int)gap+1 : (int)gap;
+  		}
+  
+  		return gap;
+***************
+*** 388,394 ****
+  	 * @since 3.0
+  	 */
+  	public void setSize(final int width, final int height) {
+! 		if(height>=0)
+  			this.height = height;
+  		if(width>=0)
+  			this.width  = width;
+--- 388,396 ----
+  	 * @since 3.0
+  	 */
+  	public void setSize(final int width, final int height) {
+! 		//if(height>=0)
+! 		//Mutant33
+! 		if(height<=0)
+  			this.height = height;
+  		if(width>=0)
+  			this.width  = width;

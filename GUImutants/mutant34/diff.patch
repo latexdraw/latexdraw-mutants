@@ -1,0 +1,22 @@
+diff -crB //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/glib/ui/LCanvas.java src/main/net/sf/latexdraw/glib/ui/LCanvas.java
+*** //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/glib/ui/LCanvas.java	Fri Nov 22 11:05:48 2013
+--- src/main/net/sf/latexdraw/glib/ui/LCanvas.java	Fri Nov 22 11:05:45 2013
+***************
+*** 675,681 ****
+  
+  	@Override
+  	public double getZoomIncrement() {
+! 		return 0.25;
+  	}
+  
+  
+--- 675,683 ----
+  
+  	@Override
+  	public double getZoomIncrement() {
+! 		//return 0.25;
+! 		//MUTANT34
+! 		return 0.;
+  	}
+  
+  
