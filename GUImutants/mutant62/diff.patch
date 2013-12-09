@@ -1,0 +1,106 @@
+diff -crB //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/glib/ui/LMagneticGrid.java src/main/net/sf/latexdraw/glib/ui/LMagneticGrid.java
+*** //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/glib/ui/LMagneticGrid.java	Fri Nov 22 11:05:48 2013
+--- src/main/net/sf/latexdraw/glib/ui/LMagneticGrid.java	Mon Dec  9 12:39:20 2013
+***************
+*** 253,261 ****
+      		double modulo 	= getMagneticGridGap();
+      		double x 		= point.getX();
+      		double y 		= point.getY();
+!     		int base 		= (int)(((int)(x/modulo))*modulo);
+  
+!     		if(x>modulo) x = x%((int)modulo);
+  
+      		double res = modulo-x;
+      		x = base;
+--- 253,261 ----
+      		double modulo 	= getMagneticGridGap();
+      		double x 		= point.getX();
+      		double y 		= point.getY();
+!     		int base 		= (int)((int)(x/modulo)*modulo);
+  
+!     		if(x>modulo) x = x%(int)modulo;
+  
+      		double res = modulo-x;
+      		x = base;
+***************
+*** 263,271 ****
+      		if(res<modulo/2.) x+=modulo;
+  
+      		point.setX((int)x);
+!     		base = (int)(((int)(point.getY()/modulo))*modulo);
+  
+!     		if(y>modulo) y = y%((int)modulo);
+  
+      		res = modulo-y;
+      		y = base;
+--- 263,271 ----
+      		if(res<modulo/2.) x+=modulo;
+  
+      		point.setX((int)x);
+!     		base = (int)((int)(point.getY()/modulo)*modulo);
+  
+!     		if(y>modulo) y = y%(int)modulo;
+  
+      		res = modulo-y;
+      		y = base;
+***************
+*** 293,300 ****
+  			gap = getGridSpacing();
+  		else {
+  			final double ppc = canvas.getPPCDrawing();
+! 			gap = ScaleRuler.getUnit()==Unit.CM ? ppc/10. : (ppc*PSTricksConstants.INCH_VAL_CM)/10.;
+! 			gap = (gap-(int)gap)>0.5? ((int)gap)+1 : (int)gap;
+  		}
+  
+  		return gap;
+--- 293,300 ----
+  			gap = getGridSpacing();
+  		else {
+  			final double ppc = canvas.getPPCDrawing();
+! 			gap = ScaleRuler.getUnit()==Unit.CM ? ppc/10. : ppc*PSTricksConstants.INCH_VAL_CM/10.;
+! 			gap = gap-(int)gap>0.5? (int)gap+1 : (int)gap;
+  		}
+  
+  		return gap;
+diff -crB //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/instruments/Helper.java src/main/net/sf/latexdraw/instruments/Helper.java
+*** //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/instruments/Helper.java	Fri Nov 22 11:05:48 2013
+--- src/main/net/sf/latexdraw/instruments/Helper.java	Mon Dec  9 13:04:44 2013
+***************
+*** 92,98 ****
+  		try{
+  			addLink(new MenuItem2AboutFrame(this, aboutFrame, aboutItem));
+  			addLink(new MenuItem2ShortcutFrame(this, aboutFrame, shortcutItem));
+! 			addLink(new MenuItem2OpenWebPageLink(this, reportBugItem, new URI("http://sourceforge.net/tracker/?group_id=156523")));
+  			addLink(new MenuItem2OpenWebPageLink(this, forumItem, new URI("http://sourceforge.net/projects/latexdraw/forums")));
+  			addLink(new MenuItem2OpenWebPageLink(this, donateItem, new URI("http://sourceforge.net/project/project_donations.php?group_id=156523")));
+  		}catch(InstantiationException | IllegalAccessException | URISyntaxException e){
+--- 92,100 ----
+  		try{
+  			addLink(new MenuItem2AboutFrame(this, aboutFrame, aboutItem));
+  			addLink(new MenuItem2ShortcutFrame(this, aboutFrame, shortcutItem));
+! 			//addLink(new MenuItem2OpenWebPageLink(this, reportBugItem, new URI("http://sourceforge.net/tracker/?group_id=156523")));
+! 			//Mutant62
+! 			addLink(new MenuItem2OpenWebPageLink(this, shortcutItem, new URI("http://sourceforge.net/tracker/?group_id=156523")));
+  			addLink(new MenuItem2OpenWebPageLink(this, forumItem, new URI("http://sourceforge.net/projects/latexdraw/forums")));
+  			addLink(new MenuItem2OpenWebPageLink(this, donateItem, new URI("http://sourceforge.net/project/project_donations.php?group_id=156523")));
+  		}catch(InstantiationException | IllegalAccessException | URISyntaxException e){
+diff -crB //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/instruments/PreferencesSetter.java src/main/net/sf/latexdraw/instruments/PreferencesSetter.java
+*** //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/instruments/PreferencesSetter.java	Fri Nov 22 11:05:48 2013
+--- src/main/net/sf/latexdraw/instruments/PreferencesSetter.java	Mon Dec  9 12:28:54 2013
+***************
+*** 221,227 ****
+    		final String[] nameThemes = new String[info.length];
+    		final String lnf = Theme.lookAndFeel();
+    		String nameLnf = null;
+!   		
+    		for(int i=0; i<info.length;i++) {
+    			nameThemes[i] = info[i].getName();
+    			if(info[i].getClassName().equals(lnf))
+--- 221,227 ----
+    		final String[] nameThemes = new String[info.length];
+    		final String lnf = Theme.lookAndFeel();
+    		String nameLnf = null;
+! 
+    		for(int i=0; i<info.length;i++) {
+    			nameThemes[i] = info[i].getName();
+    			if(info[i].getClassName().equals(lnf))

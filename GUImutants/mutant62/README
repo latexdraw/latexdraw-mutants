@@ -1,0 +1,17 @@
+MUTANT62
+
+Fault category: Action
+Fault: Incorrect action results
+Failure description: Clicking on the menu item causes one unexpected action.
+WIMP/post-WIMP: WIMP
+Ad-hoc widgets involved: no
+interactions: menu click
+Test case length: 1 (Select Menu item "Shortcuts")
+Minimal number of events to perform: 1 (press menu)
+
+The mutated file is package net.sf.latexdraw.instruments.Helper.
+The mutated code is the operation initialiseLinks().
+
+To produce the failure:
+1. Click on menu item "Shortcuts"
+-> The window dialog "Shortcuts is open and it also open a Web page.
