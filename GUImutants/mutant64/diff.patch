@@ -1,0 +1,22 @@
+diff -crB //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/generators/svg/SVGDocumentGenerator.java src/main/net/sf/latexdraw/generators/svg/SVGDocumentGenerator.java
+*** //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/generators/svg/SVGDocumentGenerator.java	Fri Nov 22 11:05:48 2013
+--- src/main/net/sf/latexdraw/generators/svg/SVGDocumentGenerator.java	Mon Dec  9 14:16:47 2013
+***************
+*** 178,184 ****
+              else if("state".equals(evt.getPropertyName()))
+              	switch((SwingWorker.StateValue)evt.getNewValue()){
+  					case STARTED:
+! 						progressBar.setVisible(true);
+  						break;
+  					case DONE:
+  						progressBar.setVisible(false);
+--- 178,186 ----
+              else if("state".equals(evt.getPropertyName()))
+              	switch((SwingWorker.StateValue)evt.getNewValue()){
+  					case STARTED:
+! 						//Mutant64
+! 						//progressBar.setVisible(true);
+! 						progressBar.setVisible(false);
+  						break;
+  					case DONE:
+  						progressBar.setVisible(false);

@@ -1,0 +1,16 @@
+MUTANT64
+Fault category: Feedback
+Fault: Incorrect Widget feedback
+Failure description: A progress bar does not show the action progress.
+WIMP/post-WIMP: WIMP
+Ad-hoc widgets involved: no
+interactions: press menu/button
+Test case length: 3 (Open a file, Select the folder, Select Open)
+Minimal number of events to perform: 2 (press menu, press button)
+
+The mutated file is net.sf.latexdraw.generators.svg.SVGDocumentGenerator
+The mutated code is the operation PropertyChange() in the class ProgressListener
+
+To produce the failure:
+1. Open a file "testFile.svg"
+-> There is no progress bar showing the status while that file is opened.
