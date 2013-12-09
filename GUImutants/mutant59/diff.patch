@@ -1,0 +1,22 @@
+diff -crB //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/actions/SetUnit.java src/main/net/sf/latexdraw/actions/SetUnit.java
+*** //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/actions/SetUnit.java	Fri Nov 22 11:05:48 2013
+--- src/main/net/sf/latexdraw/actions/SetUnit.java	Mon Dec  9 09:59:45 2013
+***************
+*** 51,57 ****
+  
+  	@Override
+  	public void undo() {
+! 		ScaleRuler.setUnit(oldUnit);
+  	}
+  
+  
+--- 51,59 ----
+  
+  	@Override
+  	public void undo() {
+! 		//Mutant59
+! 		//ScaleRuler.setUnit(oldUnit);
+! 		ScaleRuler.setUnit(unit);
+  	}
+  
+  

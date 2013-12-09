@@ -1,0 +1,17 @@
+MUTANT59
+Fault category: Reversibility
+Fault: Incorrect undo/redo
+Failure description: The operation undo does not revert the previous action.
+WIMP/post-WIMP: WIMP
+Ad-hoc widgets involved: no
+interactions: menu/button click
+Test case length: 2 (Select menu item "Unit", Perform Undo)
+Minimal number of events to perform: 3 (press menu, press button)
+
+The mutated file is package package net.sf.latexdraw.actions.SetUnit.
+The mutated code is the operation undo().
+
+To produce the failure:
+1. Select menu item Unit>inch
+2. Click on undo
+->The undo action does not revert to the previous unit (i.e. cm).
