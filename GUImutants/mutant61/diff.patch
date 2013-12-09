@@ -1,0 +1,39 @@
+diff -crB //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/instruments/PreferencesSetter.java src/main/net/sf/latexdraw/instruments/PreferencesSetter.java
+*** //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/instruments/PreferencesSetter.java	Fri Nov 22 11:05:48 2013
+--- src/main/net/sf/latexdraw/instruments/PreferencesSetter.java	Mon Dec  9 12:14:02 2013
+***************
+*** 221,227 ****
+    		final String[] nameThemes = new String[info.length];
+    		final String lnf = Theme.lookAndFeel();
+    		String nameLnf = null;
+!   		
+    		for(int i=0; i<info.length;i++) {
+    			nameThemes[i] = info[i].getName();
+    			if(info[i].getClassName().equals(lnf))
+--- 221,227 ----
+    		final String[] nameThemes = new String[info.length];
+    		final String lnf = Theme.lookAndFeel();
+    		String nameLnf = null;
+! 
+    		for(int i=0; i<info.length;i++) {
+    			nameThemes[i] = info[i].getName();
+    			if(info[i].getClassName().equals(lnf))
+***************
+*** 440,446 ****
+  	 * @return The widget used to display the standard grid.
+  	 */
+  	public MRadioButton getClassicGridRB() {
+! 		return classicGridRB;
+  	}
+  
+  	/**
+--- 440,448 ----
+  	 * @return The widget used to display the standard grid.
+  	 */
+  	public MRadioButton getClassicGridRB() {
+! 		//return classicGridRB;
+! 		//Mutant61
+! 		return null;
+  	}
+  
+  	/**
