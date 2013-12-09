@@ -8,8 +8,6 @@ interactions: menu/button click
 Test case length: 2 (Select a template, Zooming in)
 Minimal number of events to perform: 2 (press menu, press button/key press)
 
-In this mutant is introduced a interaction behavior fault: 
-
 The mutated file is package net.sf.latexdraw.ui.LCanvas.
 The mutated code is the operation paintViews.
 

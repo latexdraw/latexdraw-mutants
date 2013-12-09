@@ -1,0 +1,21 @@
+diff -crB //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/ui/ToolbarBuilder.java src/main/net/sf/latexdraw/ui/ToolbarBuilder.java
+*** //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/ui/ToolbarBuilder.java	Fri Nov 22 11:05:48 2013
+--- src/main/net/sf/latexdraw/ui/ToolbarBuilder.java	Fri Nov 22 11:05:46 2013
+***************
+*** 199,205 ****
+  	protected void composeEllipseLikeToolbar() {
+   		AbstractButton button = frame.editingSelector.getEllipseB();
+   		button.setMargin(LResources.INSET_BUTTON);
+!  		button.setToolTipText(LangTool.INSTANCE.getStringLaTeXDrawFrame("LaTeXDrawFrame.125")); //$NON-NLS-1$
+   		widget.add(button);
+  
+   		button = frame.editingSelector.getCircleB();
+--- 199,206 ----
+  	protected void composeEllipseLikeToolbar() {
+   		AbstractButton button = frame.editingSelector.getEllipseB();
+   		button.setMargin(LResources.INSET_BUTTON);
+!  		//Mutant39
+!  		//button.setToolTipText(LangTool.INSTANCE.getStringLaTeXDrawFrame("LaTeXDrawFrame.125")); //$NON-NLS-1$
+   		widget.add(button);
+  
+   		button = frame.editingSelector.getCircleB();

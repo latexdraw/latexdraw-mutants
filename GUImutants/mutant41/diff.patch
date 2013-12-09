@@ -1,0 +1,24 @@
+diff -crB //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/glib/ui/LCanvas.java src/main/net/sf/latexdraw/glib/ui/LCanvas.java
+*** //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/glib/ui/LCanvas.java	Fri Nov 22 11:05:48 2013
+--- src/main/net/sf/latexdraw/glib/ui/LCanvas.java	Fri Nov 22 11:05:46 2013
+***************
+*** 199,206 ****
+  		if(withGrid && magneticGrid.isGridDisplayed())
+      		magneticGrid.paint(g);
+  
+  		if(mustZoom)
+! 			g.scale(zoomValue, zoomValue);
+  
+  		synchronized(views){
+  			for(IViewShape view : views)
+--- 199,208 ----
+  		if(withGrid && magneticGrid.isGridDisplayed())
+      		magneticGrid.paint(g);
+  
++ 		//Mutant41
+  		if(mustZoom)
+! 			//g.scale(zoomValue, zoomValue);
+! 			g.scale(zoomValue/2, zoomValue/2);
+  
+  		synchronized(views){
+  			for(IViewShape view : views)

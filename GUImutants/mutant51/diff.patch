@@ -1,0 +1,62 @@
+diff -crB //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/glib/ui/LCanvas.java src/main/net/sf/latexdraw/glib/ui/LCanvas.java
+*** //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/glib/ui/LCanvas.java	Fri Nov 22 11:05:48 2013
+--- src/main/net/sf/latexdraw/glib/ui/LCanvas.java	Fri Nov 22 11:05:47 2013
+***************
+*** 606,612 ****
+  
+  	@Override
+  	public void onActionAborted(final Action action) {
+! 		// Nothing to do.
+  	}
+  
+  	@Override
+--- 606,612 ----
+  
+  	@Override
+  	public void onActionAborted(final Action action) {
+! 		 //Nothing to do.
+  	}
+  
+  	@Override
+diff -crB //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/instruments/Hand.scala src/main/net/sf/latexdraw/instruments/Hand.scala
+*** //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/instruments/Hand.scala	Fri Nov 22 11:05:48 2013
+--- src/main/net/sf/latexdraw/instruments/Hand.scala	Fri Nov 22 11:05:47 2013
+***************
+*** 209,215 ****
+  
+  		if(!selectionBorder.isEmpty)
+  			instrument.canvas.getViews.foreach{view =>
+! 				if(view.intersects(selectionBorder))
+  					// Taking the shape in function of the view.
+  					action.addShape(MappingRegistry.REGISTRY.getSourceFromTarget(view, classOf[IShape]))
+  			}
+--- 209,216 ----
+  
+  		if(!selectionBorder.isEmpty)
+  			instrument.canvas.getViews.foreach{view =>
+! 				//Mutant51
+! 				//if(view.intersects(selectionBorder))
+  					// Taking the shape in function of the view.
+  					action.addShape(MappingRegistry.REGISTRY.getSourceFromTarget(view, classOf[IShape]))
+  			}
+diff -crB //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/instruments/Pencil.java src/main/net/sf/latexdraw/instruments/Pencil.java
+*** //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/instruments/Pencil.java	Fri Nov 22 11:05:48 2013
+--- src/main/net/sf/latexdraw/instruments/Pencil.java	Fri Nov 22 11:05:47 2013
+***************
+*** 339,345 ****
+  		// To avoid the overlapping with the DnD2AddShape, the starting interaction must be
+  		// aborted when the condition is not respected, i.e. when the selected shape type is
+  		// not devoted to the multi-clic interaction.
+! 		return !isConditionRespected();
+  	}
+  
+  
+--- 339,346 ----
+  		// To avoid the overlapping with the DnD2AddShape, the starting interaction must be
+  		// aborted when the condition is not respected, i.e. when the selected shape type is
+  		// not devoted to the multi-clic interaction.
+! 		//return !isConditionRespected();
+! 		return true;
+  	}
+  
+  

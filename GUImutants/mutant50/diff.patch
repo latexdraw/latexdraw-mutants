@@ -1,0 +1,21 @@
+diff -crB //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/instruments/Pencil.java src/main/net/sf/latexdraw/instruments/Pencil.java
+*** //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/instruments/Pencil.java	Fri Nov 22 11:05:48 2013
+--- src/main/net/sf/latexdraw/instruments/Pencil.java	Fri Nov 22 11:05:47 2013
+***************
+*** 393,399 ****
+  		if(instrument.getCurrentChoice()==EditionChoice.POLYGON)
+  			interaction.setMinPoints(3);
+  		else
+! 			interaction.setMinPoints(2);
+  	}
+  }
+  
+--- 393,400 ----
+  		if(instrument.getCurrentChoice()==EditionChoice.POLYGON)
+  			interaction.setMinPoints(3);
+  		else
+! 			//interaction.setMinPoints(2);
+! 			interaction.setMinPoints(6);
+  	}
+  }
+  

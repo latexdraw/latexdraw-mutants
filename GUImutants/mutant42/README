@@ -1,11 +1,17 @@
 MUTANT42
-
-In this mutant is introduced a interaction behavior fault: 
+Fault category: Action
+Fault: Incorrect action results
+Failure description: The shape is not draw correctly after releasing mouse button by DnD interaction.
+WIMP/post-WIMP: post-WIMP
+Ad-hoc widgets involved: yes
+interactions: DnD, button click
+Test case length: 2 (Select Shape, Add Shape)
+Minimal number of events to perform: 4 (press button, press canvas, move canvas, release canvas)
 
 The mutated file is package net.sf.latexdraw.ui.LCanvas.
 The mutated code is the operation paintViews.
 
 To produce the failure:
-1. Draw a shape on canvas by drag and drop.
- 
-Actual result:  The shape disappears after releasing the mouse button to complete the drawing. However, when the zoom is changed the shape appears.
+1. Select a shape style
+2. Draw a shape on canvas by drag and drop.
+->The shape disappears after releasing the mouse button to complete the drawing. However, when the zoom is changed the shape appears.

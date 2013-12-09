@@ -1,0 +1,22 @@
+diff -crB //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/glib/models/impl/LShape.java src/main/net/sf/latexdraw/glib/models/impl/LShape.java
+*** //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/glib/models/impl/LShape.java	Fri Nov 22 11:05:48 2013
+--- src/main/net/sf/latexdraw/glib/models/impl/LShape.java	Fri Nov 22 11:05:47 2013
+***************
+*** 148,154 ****
+  		arrows			= null;
+  		hasShadow   	= false;
+  		hasDbleBord		= false;
+! 		lineStyle		= LineStyle.SOLID;
+  		lineColour		= PSTricksConstants.DEFAULT_LINE_COLOR;
+  		dotSep			= PSTricksConstants.DEFAULT_DOT_STEP*PPC;
+  		dashSepBlack	= PSTricksConstants.DEFAULT_DASH_BLACK*PPC;
+--- 148,156 ----
+  		arrows			= null;
+  		hasShadow   	= false;
+  		hasDbleBord		= false;
+! 		//lineStyle		= LineStyle.SOLID;
+! 		//Mutant46
+! 		lineStyle		= LineStyle.DASHED;
+  		lineColour		= PSTricksConstants.DEFAULT_LINE_COLOR;
+  		dotSep			= PSTricksConstants.DEFAULT_DOT_STEP*PPC;
+  		dashSepBlack	= PSTricksConstants.DEFAULT_DASH_BLACK*PPC;

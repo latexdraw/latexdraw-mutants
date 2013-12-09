@@ -1,6 +1,12 @@
 MUTANT51
-
-In this mutant is introduced a interaction link fault: 
+Fault category: Action
+Fault: Incorrect action executed
+Failure description: Incorrect selection of shapes.
+WIMP/post-WIMP: post-WIMP
+Ad-hoc widgets involved: yes
+interactions: DnD, button click
+Test case length: 4 (Import template, Select shape, Add shape, Select Shapes)
+Minimal number of events to perform: 5 (press menu, press button, press canvas (Select), move canvas, release canvas)
 
 The mutated file is package  net.sf.latexdraw.instruments.Hand.
 The mutated code is the operation updateAction() in the DnD2Select class.
@@ -8,6 +14,5 @@ The mutated code is the operation updateAction() in the DnD2Select class.
 To produce the failure:
 1. Draw one or more shapes on canvas
 2. Click on select in the tool bar
-3. Drag and drop on canvas
- 
-Actual result: All shapes drawn are selected.
+3. Drag and drop on canvas to select one shape
+-> All shapes on canvas drawn are selected.

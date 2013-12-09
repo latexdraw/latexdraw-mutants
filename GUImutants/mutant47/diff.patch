@@ -1,0 +1,21 @@
+diff -crB //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/instruments/EditingSelector.java src/main/net/sf/latexdraw/instruments/EditingSelector.java
+*** //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/instruments/EditingSelector.java	Fri Nov 22 11:05:48 2013
+--- src/main/net/sf/latexdraw/instruments/EditingSelector.java	Fri Nov 22 11:05:47 2013
+***************
+*** 617,623 ****
+  			action.addInstrumentToInactivate(instrument.border);
+  			action.addInstrumentToInactivate(instrument.deleter);
+  			action.addInstrumentToActivate(instrument.pencil);
+! 			action.addInstrumentToActivate(instrument.metaShapeCustomiser);
+  		}
+  	}
+  
+--- 617,624 ----
+  			action.addInstrumentToInactivate(instrument.border);
+  			action.addInstrumentToInactivate(instrument.deleter);
+  			action.addInstrumentToActivate(instrument.pencil);
+! 			//Mutant47
+! 			//action.addInstrumentToActivate(instrument.metaShapeCustomiser);
+  		}
+  	}
+  

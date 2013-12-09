@@ -1,0 +1,22 @@
+diff -crB //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/glib/models/impl/LShape.java src/main/net/sf/latexdraw/glib/models/impl/LShape.java
+*** //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/glib/models/impl/LShape.java	Fri Nov 22 11:05:48 2013
+--- src/main/net/sf/latexdraw/glib/models/impl/LShape.java	Fri Nov 22 11:05:46 2013
+***************
+*** 899,905 ****
+  	@Override
+  	public void translate(final double tx, final double ty) {
+  		if(GLibUtilities.INSTANCE.isValidPoint(tx, ty))
+! 			for(int i=0, size=points.size(); i<size; i++)
+  				points.get(i).translate(tx, ty);
+  	}
+  
+--- 899,907 ----
+  	@Override
+  	public void translate(final double tx, final double ty) {
+  		if(GLibUtilities.INSTANCE.isValidPoint(tx, ty))
+! 			//Mutant43
+! 			//for(int i=0, size=points.size(); i<size; i++)
+! 			for(int i=0, size=points.size(); i>size; i++)
+  				points.get(i).translate(tx, ty);
+  	}
+  

@@ -1,6 +1,12 @@
 MUTANT49
-
-In this mutant is introduced a abort interaction fault: 
+Fault category: Reversibility
+Fault: Reverting current interaction
+Failure description: Interaction is aborted incorrectly.
+WIMP/post-WIMP: post-WIMP
+Ad-hoc widgets involved: yes
+interactions: DnD, button click
+Test case length: 2 (Select Polygon Shape, Add Shape)
+Minimal number of events to perform: 4 (press button, press canvas, move canvas, release canvas)
 
 The mutated file is package  net.sf.latexdraw.instruments.Pencil.
 The mutated code is the operation interactionStarts in the MultiClic2AddShape class.
@@ -8,5 +14,4 @@ The mutated code is the operation interactionStarts in the MultiClic2AddShape cl
 To produce the failure:
 1. Select a polygon shape.
 2. Drawing a polygon with 3 sides (1 left click + DnD; 1 left click + DnD; 1 right click).
- 
-Actual result: When the right button is pressed the polygon is not created and the interaction is aborted.
+-> When the right button is pressed the polygon is not created and the interaction is aborted.

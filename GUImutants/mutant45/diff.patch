@@ -1,0 +1,25 @@
+diff -crB //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/actions/shape/TranslateShapes.scala src/main/net/sf/latexdraw/actions/shape/TranslateShapes.scala
+*** //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/actions/shape/TranslateShapes.scala	Fri Nov 22 11:05:48 2013
+--- src/main/net/sf/latexdraw/actions/shape/TranslateShapes.scala	Fri Nov 22 11:05:47 2013
+***************
+*** 51,58 ****
+  		_shape.get.translate(_tx-performedTx, _ty-performedTy)
+  		_shape.get.setModified(true)
+  		_drawing.get.setModified(true)
+! 		performedTx = _tx
+! 		performedTy = _ty
+  	}
+  
+  
+--- 51,61 ----
+  		_shape.get.translate(_tx-performedTx, _ty-performedTy)
+  		_shape.get.setModified(true)
+  		_drawing.get.setModified(true)
+! 		//performedTx = _tx
+! 		//performedTy = _ty
+! 		//Mutant45
+! 		performedTx = _ty
+! 		performedTy = _tx
+  	}
+  
+  

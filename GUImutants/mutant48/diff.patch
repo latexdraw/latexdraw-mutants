@@ -1,0 +1,78 @@
+diff -crB //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/instruments/Pencil.java src/main/net/sf/latexdraw/instruments/Pencil.java
+*** //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/instruments/Pencil.java	Fri Nov 22 11:05:48 2013
+--- src/main/net/sf/latexdraw/instruments/Pencil.java	Fri Nov 22 11:05:47 2013
+***************
+*** 410,416 ****
+  	 * @since 3.0
+  	 */
+  	protected DnD2AddShape(final Pencil ins, final boolean exec) throws InstantiationException, IllegalAccessException {
+! 		super(ins, exec, AbortableDnD.class);
+  	}
+  
+  
+--- 410,416 ----
+  	 * @since 3.0
+  	 */
+  	protected DnD2AddShape(final Pencil ins, final boolean exec) throws InstantiationException, IllegalAccessException {
+! 			super(ins, exec, AbortableDnD.class);
+  	}
+  
+  
+diff -crB //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/instruments/PreferencesSetter.java src/main/net/sf/latexdraw/instruments/PreferencesSetter.java
+*** //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/instruments/PreferencesSetter.java	Fri Nov 22 11:05:48 2013
+--- src/main/net/sf/latexdraw/instruments/PreferencesSetter.java	Fri Nov 22 11:05:47 2013
+***************
+*** 221,227 ****
+    		final String[] nameThemes = new String[info.length];
+    		final String lnf = Theme.lookAndFeel();
+    		String nameLnf = null;
+!   		
+    		for(int i=0; i<info.length;i++) {
+    			nameThemes[i] = info[i].getName();
+    			if(info[i].getClassName().equals(lnf))
+--- 221,227 ----
+    		final String[] nameThemes = new String[info.length];
+    		final String lnf = Theme.lookAndFeel();
+    		String nameLnf = null;
+! 
+    		for(int i=0; i<info.length;i++) {
+    			nameThemes[i] = info[i].getName();
+    			if(info[i].getClassName().equals(lnf))
+diff -crB //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/instruments/TextSetter.java src/main/net/sf/latexdraw/instruments/TextSetter.java
+*** //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/instruments/TextSetter.java	Fri Nov 22 11:05:48 2013
+--- src/main/net/sf/latexdraw/instruments/TextSetter.java	Fri Nov 22 11:05:47 2013
+***************
+*** 174,180 ****
+  		int key = interaction.getKey();
+  		// It is useless to check if another key is pressed because if it is the case, the interaction
+  		// is in state keyPressed.
+! 		return (key==KeyEvent.VK_ENTER && instrument.textField.getText().length()>0) || key==KeyEvent.VK_ESCAPE;
+  	}
+  }
+  
+--- 174,180 ----
+  		int key = interaction.getKey();
+  		// It is useless to check if another key is pressed because if it is the case, the interaction
+  		// is in state keyPressed.
+! 		return key==KeyEvent.VK_ENTER && instrument.textField.getText().length()>0 || key==KeyEvent.VK_ESCAPE;
+  	}
+  }
+  
+***************
+*** 222,228 ****
+  			text.setPosition(textPosition.getX(), textPosition.getY());
+  			text.setText(instrument.textField.getText());
+  			action.setShape(text);
+! 			action.setDrawing(instrument.pencil.canvas.getDrawing());
+  		}
+  	}
+  
+--- 222,229 ----
+  			text.setPosition(textPosition.getX(), textPosition.getY());
+  			text.setText(instrument.textField.getText());
+  			action.setShape(text);
+! 			//Mutant48
+! 			//action.setDrawing(instrument.pencil.canvas.getDrawing());
+  		}
+  	}
+  

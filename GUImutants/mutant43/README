@@ -1,12 +1,20 @@
 MUTANT43
+Fault category: Action
+Fault: Incorrect action results
+Failure description: Shapes are not aligned correctly. 
+WIMP/post-WIMP: post-WIMP
+Ad-hoc widgets involved: yes
+interactions: button/menu click, DnD
+Test case length: 5 (Import Template, Select Shape, Add Shape, Select Shapes, Align Shapes)
+Minimal number of events to perform: 7 (press menu, press button, press canvas (select), move canvas, release canvas, press button (Align) - 2 times)
 
-In this mutant is introduced a interaction behavior fault: 
 
 The mutated file is package net.sf.latexdraw.instruments.ShapeTransformer.
 The mutated code is the operation Button2Align.
 
 To produce the failure:
-1. Draw two or more shapes on canvas 
-2. Align the shapes.
- 
-Actual result:  The shapes are not aligned correctly.
+1. Load a template
+2. Draw a shape 
+2. Select both shapes
+3. Align the shapes.
+->The shapes are not aligned in a wrong position.

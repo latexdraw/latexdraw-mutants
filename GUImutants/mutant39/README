@@ -1,11 +1,16 @@
 MUTANT39
-
-In this mutant is introduced a interim feedback fault: 
+Fault category: GUI Structure and Aestheticism
+Fault: Incorrect appearance of widgets
+Failure description: The tooltip does not show up.
+WIMP/post-WIMP: WIMP
+Ad-hoc widgets involved: no
+interactions: Mouse over
+Test case length: 1 (Mouse over ellipse button)
+Minimal number of events to perform: 1 (Move over button) 
 
 The mutated file is package net.sf.latexdraw.ui.ToolbarBuilder.
 The mutated code is the operation composeEllipseLikeToolbar().
 
 To produce the failure:
 1. Pass the mouse over the ellipse icon on tool bar.
- 
-Actual result:  The ellipse tooltip does not show up.
+->The ellipse tooltip does not show up.

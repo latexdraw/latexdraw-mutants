@@ -1,0 +1,22 @@
+diff -crB //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/instruments/ShapeTransformer.scala src/main/net/sf/latexdraw/instruments/ShapeTransformer.scala
+*** //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/instruments/ShapeTransformer.scala	Fri Nov 22 11:05:48 2013
+--- src/main/net/sf/latexdraw/instruments/ShapeTransformer.scala	Fri Nov 22 11:05:46 2013
+***************
+*** 207,213 ****
+  		val but = interaction.getButton
+  
+  		action.setShape(instrument.pencil.canvas.getDrawing.getSelection.duplicate.asInstanceOf[IGroup])
+! 		if(but==instrument._alignBot) action.setAlignment(AlignmentType.bottom)
+  		else if(but==instrument._alignLeft) action.setAlignment(AlignmentType.left)
+  		else if(but==instrument._alignMidHoriz) action.setAlignment(AlignmentType.midHoriz)
+  		else if(but==instrument._alignMidVert) action.setAlignment(AlignmentType.midVert)
+--- 207,215 ----
+  		val but = interaction.getButton
+  
+  		action.setShape(instrument.pencil.canvas.getDrawing.getSelection.duplicate.asInstanceOf[IGroup])
+! 		//if(but==instrument._alignBot) action.setAlignment(AlignmentType.bottom)
+! 		//Mutant43
+! 		if(but!=instrument._alignBot) action.setAlignment(AlignmentType.bottom)
+  		else if(but==instrument._alignLeft) action.setAlignment(AlignmentType.left)
+  		else if(but==instrument._alignMidHoriz) action.setAlignment(AlignmentType.midHoriz)
+  		else if(but==instrument._alignMidVert) action.setAlignment(AlignmentType.midVert)

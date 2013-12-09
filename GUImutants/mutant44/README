@@ -1,11 +1,17 @@
 MUTANT44
-
-In this mutant is introduced a interaction behavior fault: 
+Fault category: Action
+Fault: Incorrect action executed
+Failure description: A line is drawn instead of the selected shape.
+WIMP/post-WIMP: post-WIMP
+Ad-hoc widgets involved: yes
+interactions: DnD, button click
+Test case length: 2 (Select shape, Add shape)
+Minimal number of events to perform: 4 (press button, press canvas, move canvas, release canvas)
 
 The mutated file is package net.sf.latexdraw.glib.models.impl.LShape.
 The mutated code is the operation translate.
 
 To produce the failure:
-1. Draw a shape on canvas 
- 
-Actual result:  A line is drawn on top of canvas instead of the shape.
+1. Select a shape style
+2. Draw a shape on canvas 
+->A line is drawn on top of canvas instead of the shape.
