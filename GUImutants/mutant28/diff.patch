@@ -1,0 +1,21 @@
+diff -crB //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/instruments/Pencil.java src/main/net/sf/latexdraw/instruments/Pencil.java
+*** //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/instruments/Pencil.java	Fri Nov 22 11:05:48 2013
+--- src/main/net/sf/latexdraw/instruments/Pencil.java	Fri Nov 22 11:05:44 2013
+***************
+*** 120,126 ****
+  			addLink(new Press2AddText(this, false));
+  			addLink(new Press2InsertPicture(this, false));
+  			addLink(new DnD2AddShape(this, false));
+! 			addLink(new MultiClic2AddShape(this, false));
+  			addLink(new Press2InitTextSetter(this));
+  		}catch(InstantiationException | IllegalAccessException e){
+  			BadaboomCollector.INSTANCE.add(e);
+--- 120,127 ----
+  			addLink(new Press2AddText(this, false));
+  			addLink(new Press2InsertPicture(this, false));
+  			addLink(new DnD2AddShape(this, false));
+! 			//Mutant28
+! 			//addLink(new MultiClic2AddShape(this, false));
+  			addLink(new Press2InitTextSetter(this));
+  		}catch(InstantiationException | IllegalAccessException e){
+  			BadaboomCollector.INSTANCE.add(e);

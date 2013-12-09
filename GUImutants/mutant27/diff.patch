@@ -1,0 +1,45 @@
+diff -crB //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/actions/shape/MoveBackForegroundShapes.scala src/main/net/sf/latexdraw/actions/shape/MoveBackForegroundShapes.scala
+*** //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/actions/shape/MoveBackForegroundShapes.scala	Fri Nov 22 11:05:48 2013
+--- src/main/net/sf/latexdraw/actions/shape/MoveBackForegroundShapes.scala	Fri Nov 22 11:05:44 2013
+***************
+*** 42,50 ****
+  
+  	override protected def doActionBody() {
+  		if(foreground)
+- 			moveInForeground
+- 		else
+  			moveInBackground
+  	}
+  
+  
+--- 42,50 ----
+  
+  	override protected def doActionBody() {
+  		if(foreground)
+  			moveInBackground
++ 		else
++ 			moveInForeground
+  	}
+  
+  
+diff -crB //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/instruments/Pencil.java src/main/net/sf/latexdraw/instruments/Pencil.java
+*** //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/instruments/Pencil.java	Fri Nov 22 11:05:48 2013
+--- src/main/net/sf/latexdraw/instruments/Pencil.java	Fri Nov 22 11:05:44 2013
+***************
+*** 119,125 ****
+  			addLink(new Press2AddShape(this));
+  			addLink(new Press2AddText(this, false));
+  			addLink(new Press2InsertPicture(this, false));
+! 			addLink(new DnD2AddShape(this, false));
+  			addLink(new MultiClic2AddShape(this, false));
+  			addLink(new Press2InitTextSetter(this));
+  		}catch(InstantiationException | IllegalAccessException e){
+--- 119,126 ----
+  			addLink(new Press2AddShape(this));
+  			addLink(new Press2AddText(this, false));
+  			addLink(new Press2InsertPicture(this, false));
+! 			//Mutant27
+! 			//addLink(new DnD2AddShape(this, false));
+  			addLink(new MultiClic2AddShape(this, false));
+  			addLink(new Press2InitTextSetter(this));
+  		}catch(InstantiationException | IllegalAccessException e){

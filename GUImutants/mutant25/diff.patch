@@ -1,0 +1,21 @@
+diff -crB //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/actions/shape/AddShape.scala src/main/net/sf/latexdraw/actions/shape/AddShape.scala
+*** //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/actions/shape/AddShape.scala	Fri Nov 22 11:05:48 2013
+--- src/main/net/sf/latexdraw/actions/shape/AddShape.scala	Fri Nov 22 11:05:44 2013
+***************
+*** 47,53 ****
+  
+  
+  	override def undo() {
+! 		drawing.get.removeShape(shape.get)
+  		drawing.get.setModified(true)
+  	}
+  
+--- 47,54 ----
+  
+  
+  	override def undo() {
+! 		//Mutant25
+! 		//drawing.get.removeShape(shape.get)
+  		drawing.get.setModified(true)
+  	}
+  
