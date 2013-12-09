@@ -1,0 +1,21 @@
+diff -crB //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/instruments/TabSelector.java src/main/net/sf/latexdraw/instruments/TabSelector.java
+*** //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/instruments/TabSelector.java	Fri Nov 22 11:05:48 2013
+--- src/main/net/sf/latexdraw/instruments/TabSelector.java	Mon Dec  9 11:05:47 2013
+***************
+*** 83,89 ****
+  			action.addInstrumentToActivate(instrument.frame.getPaster());
+  			action.addInstrumentToActivate(instrument.frame.getScaleRulersCustomiser());
+  			action.addInstrumentToActivate(instrument.frame.getUndoManager());
+! 			action.addInstrumentToActivate(instrument.frame.getZoomer());
+  		}
+  
+  
+--- 83,90 ----
+  			action.addInstrumentToActivate(instrument.frame.getPaster());
+  			action.addInstrumentToActivate(instrument.frame.getScaleRulersCustomiser());
+  			action.addInstrumentToActivate(instrument.frame.getUndoManager());
+! 			//Mutant60
+! 			//action.addInstrumentToActivate(instrument.frame.getZoomer());
+  		}
+  
+  
