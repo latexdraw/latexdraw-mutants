@@ -1,0 +1,17 @@
+MUTANT63
+Fault category: Feedback
+Fault: Incorrect Widget feedback
+Failure description: The status bar does not show the information about whether actions are executed or not.
+WIMP/post-WIMP: WIMP
+Ad-hoc widgets involved: no
+interactions: press menu/button
+Test case length: 4 (Import template, Select Save, Select the folder, Select Save)
+Minimal number of events to perform: 3 (press menu, press menu, press button)
+
+The mutated file is net.sf.latexdraw.generators.svg.SVGDocumentGenerator
+The mutated code is the operation done()
+
+To produce the failure:
+1. Import a template
+2. Save the shape
+-> There is no message about whether that drawing is saved or not.

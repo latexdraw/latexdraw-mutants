@@ -1,0 +1,22 @@
+diff -crB //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/generators/svg/SVGDocumentGenerator.java src/main/net/sf/latexdraw/generators/svg/SVGDocumentGenerator.java
+*** //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/generators/svg/SVGDocumentGenerator.java	Fri Nov 22 11:05:48 2013
+--- src/main/net/sf/latexdraw/generators/svg/SVGDocumentGenerator.java	Mon Dec  9 14:27:02 2013
+***************
+*** 625,631 ****
+  			super.done();
+  			// Showing a message in the status bar.
+  			if(statusBar!=null)
+! 				statusBar.setText(LangTool.INSTANCE.getStringLaTeXDrawFrame("LaTeXDrawFrame.191")); //$NON-NLS-1$
+  		}
+  	}
+  
+--- 625,633 ----
+  			super.done();
+  			// Showing a message in the status bar.
+  			if(statusBar!=null)
+! 				//Mutant63
+! 				//statusBar.setText(LangTool.INSTANCE.getStringLaTeXDrawFrame("LaTeXDrawFrame.191")); //$NON-NLS-1$
+! 				statusBar.setText(LangTool.INSTANCE.getStringLaTeXDrawFrame(""));
+  		}
+  	}
+  
