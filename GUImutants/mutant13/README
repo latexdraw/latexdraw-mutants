@@ -1,13 +1,18 @@
 MUTANT13
-
-In this mutant is introduced a interaction link fault: 
+Fault category: Action
+Fault: No action executed
+Failure description: the condition stating whether the interaction must provoke the deletion is not correct.
+WIMP/post-WIMP: post-WIMP
+Ad-hoc widgets involved: yes
+interactions: key pressure, menu click, pressure
+Test case length: 3 (Import template, select shape, delete shape)
+Minimal number of events to perform: 3 (press menu, press canvas, press button)
 
 The mutated file is package net.sf.latexdraw.instruments.ShaperDeleter
-The mutated code is the operation isConditionRespected in the DeleteShapesLink class.
+The mutated code is the operation isConditionRespected in the ButtonPressed2DeleteShapes class.
 
 To produce the failure:
-1. Draw a shape on canvas
+1. Import template
 2. Selecting a shape by drag-and-drop onto the drawing area
-3. Deleting a shape by using the widget "Delete" or Delete key.
-
-Actual result: The shape is not deleted.
+3. Deleting a shape by using the widget "Delete".
+->The shape is not deleted.

@@ -136,9 +136,7 @@ abstract class DeleteShapesLink<I extends Interaction> extends Link<DeleteShapes
 	@Override
 	public boolean isConditionRespected() {
 		final SelectShapes selection = ActionsRegistry.INSTANCE.getAction(SelectShapes.class);
-		//return selection!=null && !selection.shapes().isEmpty();
-		//Mutant13
-		return selection==null && !selection.shapes().isEmpty();
+		return selection!=null && !selection.shapes().isEmpty();
 	}
 }
 
@@ -180,6 +178,9 @@ class ButtonPressed2DeleteShapes extends DeleteShapesLink<ButtonPressed> {
 
 	@Override
 	public boolean isConditionRespected() {
-		return interaction.getButton()==instrument.deleteB && super.isConditionRespected();
+		//return interaction.getButton()==instrument.deleteB && super.isConditionRespected();
+		//Mutant13
+		return interaction.getButton()!=instrument.deleteB && super.isConditionRespected();
+
 	}
 }

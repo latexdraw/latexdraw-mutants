@@ -1,7 +1,21 @@
-diff -r net.sf.latexdraw.mutant13/src/main/net/sf/latexdraw/instruments/ShapeDeleter.java ../original/net.sf.latexdraw/src/main/net/sf/latexdraw/instruments/ShapeDeleter.java
-139,141c139
-< 		//return selection!=null && !selection.shapes().isEmpty();
-< 		//Mutant13
-< 		return selection==null && !selection.shapes().isEmpty();
----
-> 		return selection!=null && !selection.shapes().isEmpty();
+diff -crB //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/instruments/ShapeDeleter.java src/main/net/sf/latexdraw/instruments/ShapeDeleter.java
+*** //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/instruments/ShapeDeleter.java	Fri Nov 22 11:05:48 2013
+--- src/main/net/sf/latexdraw/instruments/ShapeDeleter.java	Mon Dec  9 17:36:00 2013
+***************
+*** 178,183 ****
+  
+  	@Override
+  	public boolean isConditionRespected() {
+! 		return interaction.getButton()==instrument.deleteB && super.isConditionRespected();
+  	}
+  }
+--- 178,186 ----
+  
+  	@Override
+  	public boolean isConditionRespected() {
+! 		//return interaction.getButton()==instrument.deleteB && super.isConditionRespected();
+! 		//Mutant13
+! 		return interaction.getButton()!=instrument.deleteB && super.isConditionRespected();
+! 
+  	}
+  }
