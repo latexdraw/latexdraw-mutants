@@ -5,7 +5,7 @@ Failure description: Interaction is aborted incorrectly.
 WIMP/post-WIMP: post-WIMP
 Ad-hoc widgets involved: yes
 interactions: DnD, button click
-Test case length: 2 (Select Polygon Shape, Add Shape)
+Test case length: 2 (Select Polygon, Add Polygon)
 Minimal number of events to perform: 4 (press button, press canvas, move canvas, release canvas)
 
 The mutated file is package  net.sf.latexdraw.instruments.Pencil.

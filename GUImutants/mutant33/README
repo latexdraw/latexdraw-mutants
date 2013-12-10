@@ -5,12 +5,11 @@ Failure description: The magnetic grid does not show up on canvas.
 WIMP/post-WIMP: post-WIMP
 Ad-hoc widgets involved: yes
 interactions: no
-Test case length: 1 (Start Latexdraw)
+Test case length: 0
 Minimal number of events to perform: 0 
 
 The mutated file is package net.sf.latexdraw.glib.ui.LMagneticGrid.
 The mutated code is the operation setSize().
 
 To produce the failure:
-1. Open latexdraw
 ->The magnetic grid on Canvas is not displayed.

@@ -5,7 +5,7 @@ Failure description: No actions is reverted (menu and canvas).
 WIMP/post-WIMP: WIMP
 Ad-hoc widgets involved: no
 interactions: press menu, button click
-Test case length: 5 (Select Menu "Unit", Click inch, Perform Undo)
+Test case length: 2 (Select Menu item, Perform Undo)
 Minimal number of events to perform: 2 (press menu, press button (undo))
 
 The mutated file is package net.sf.latexdraw.ui.UIBuilder.
@@ -18,5 +18,5 @@ To produce the failure:
 ->The unit is still inch.
 
 Observations: 
-Shortcuts for undo or redo actions do not work on Mac.
+Shortcuts for undo or redo actions do not work correctly on Mac. It will freeze after several interactions.
 This mutant can be used to test Reversibility for both WIMP and post-WIMP.

@@ -5,7 +5,7 @@ Failure description: Typing text does not work.
 WIMP/post-WIMP: post-WIMP
 Ad-hoc widgets involved: yes
 interactions: button/canvas click, key press
-Test case length: 3 (Select Text, Type Text, Add Text)
+Test case length: 2 (Select Text, Add Text)
 Minimal number of events to perform: 4 (press button, click canvas, Key press, click canvas)
 
 The mutated file is package net.sf.latexdraw.instruments.Pencil

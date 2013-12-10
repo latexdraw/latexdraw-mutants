@@ -5,7 +5,7 @@ Failure description: Corresponding window dialog is not open.
 WIMP/post-WIMP: WIMP
 Ad-hoc widgets involved: yes
 interactions: button click, canvas click
-Test case length: 3 (Select dot, Draw dot, Select Close button)
+Test case length: 3 (Select dot, Draw dot, Close Window)
 Minimal number of events to perform: 4 (press button, press canvas, press button, press button (yes))
 
 The mutated file is package package net.sf.latexdraw.actions.SaveDrawing.

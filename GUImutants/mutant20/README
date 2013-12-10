@@ -6,7 +6,7 @@ WIMP/post-WIMP: post-WIMP
 Ad-hoc widgets involved: yes
 interactions: button click, press, DnD
 Test case length: 5 (Select a shape, Add a shape, Select a shape on canvas, Modify double border  property, Perform Undo)
-Minimal number of events to perform: 7 (press button (select a shape), press button (selection mode), press canvas (selection), move canvas, release canvas, press button (modify shape properties), press button - 2 times (undo))
+Minimal number of events to perform: 8 (press button (select a shape), press button (selection mode), press canvas (selection), move canvas, release canvas, press button (modify shape properties), press button - 2 times (undo))
 
 The mutated file is package package net.sf.latexdraw.actions.shape.ModifyShapeProperty.
 The mutated code is the operation undo().
