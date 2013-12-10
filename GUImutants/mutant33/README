@@ -13,5 +13,4 @@ The mutated code is the operation setSize().
 
 To produce the failure:
 1. Open latexdraw
- 
-Actual result:  The magnetic grid on Canvas is not displayed.
+->The magnetic grid on Canvas is not displayed.
