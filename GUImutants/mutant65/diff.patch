@@ -1,0 +1,74 @@
+diff -crB //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/instruments/TabSelector.java src/main/net/sf/latexdraw/instruments/TabSelector.java
+*** //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/instruments/TabSelector.java	Fri Nov 22 11:05:48 2013
+--- src/main/net/sf/latexdraw/instruments/TabSelector.java	Tue Dec 10 14:37:18 2013
+***************
+*** 67,76 ****
+  
+  			switch(interaction.getTabbedPane().getSelectedIndex()) {
+  				case 0: // Drawing tab.
+! 					initActionOnDrawingPanel();
+  					break;
+  				case 1: // PST tab.
+! 					initActionOnPSTCodePanel();
+  					break;
+  					default:
+  			}
+--- 67,79 ----
+  
+  			switch(interaction.getTabbedPane().getSelectedIndex()) {
+  				case 0: // Drawing tab.
+! 					//Mutant65
+! 					//initActionOnDrawingPanel();
+! 					initActionOnPSTCodePanel();
+  					break;
+  				case 1: // PST tab.
+! 					//initActionOnPSTCodePanel();
+! 					initActionOnDrawingPanel();
+  					break;
+  					default:
+  			}
+diff -crB //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/util/LPath.java src/main/net/sf/latexdraw/util/LPath.java
+*** //Users/vlellile/Documents/Valeria/Latexdraw-mutants/GUImutants/original/net.sf.latexdraw/src/main/net/sf/latexdraw/util/LPath.java	Fri Nov 22 11:05:48 2013
+--- src/main/net/sf/latexdraw/util/LPath.java	Mon Dec  9 15:25:28 2013
+***************
+*** 133,140 ****
+  	 */
+  	public void checkInstallDirectories() {
+  		try {
+! 			(new File(PATH_SHARED)).mkdirs();
+! 			(new File(PATH_TEMPLATES_SHARED)).mkdirs();
+  		}
+  		catch(SecurityException e) { BadaboomCollector.INSTANCE.add(e); }
+  	}
+--- 133,140 ----
+  	 */
+  	public void checkInstallDirectories() {
+  		try {
+! 			new File(PATH_SHARED).mkdirs();
+! 			new File(PATH_TEMPLATES_SHARED).mkdirs();
+  		}
+  		catch(SecurityException e) { BadaboomCollector.INSTANCE.add(e); }
+  	}
+***************
+*** 146,155 ****
+  	 */
+  	public void checkDirectories() {
+  		try {
+! 			(new File(PATH_LOCAL_USER)).mkdirs();
+! 			(new File(PATH_TEMPLATES_DIR_USER)).mkdirs();
+! 			(new File(PATH_CACHE_DIR)).mkdirs();
+! 			(new File(PATH_CACHE_SHARE_DIR)).mkdirs();
+  		}
+  		catch(SecurityException e) { BadaboomCollector.INSTANCE.add(e); }
+  	}
+--- 146,155 ----
+  	 */
+  	public void checkDirectories() {
+  		try {
+! 			new File(PATH_LOCAL_USER).mkdirs();
+! 			new File(PATH_TEMPLATES_DIR_USER).mkdirs();
+! 			new File(PATH_CACHE_DIR).mkdirs();
+! 			new File(PATH_CACHE_SHARE_DIR).mkdirs();
+  		}
+  		catch(SecurityException e) { BadaboomCollector.INSTANCE.add(e); }
+  	}

@@ -1,0 +1,17 @@
+MUTANT65
+Fault category: GUI Structure and Aestheticism
+Fault: Incorrect layout of widgets
+Failure description: Tab pane is incorrectly
+WIMP/post-WIMP: WIMP
+Ad-hoc widgets involved: no
+interactions: tab click
+Test case length: 2 (Select PST tab, Select Drawing tab)
+Minimal number of events to perform: 2 (press tab - 2 times) 
+
+The mutated file is package et.sf.latexdraw.instruments.TabSelector.
+The mutated code is the operation initAction().
+
+To produce the failure:
+1. Select tab "PST"
+2. Select tab "Drawing"
+-> The Drawing Pane does not appear in the Drawing tab but in the PST tab and vice-versa.
