@@ -66,7 +66,7 @@ object FlyweightThumbnail {
 	 */
 	val images : Map[String, Tuple4[Image,Set[IViewText],String,String]] = new HashMap[String, Tuple4[Image,Set[IViewText],String,String]]()
 
-	val _scaleImage = 2.
+	val _scaleImage = 2.0
 
 	val creationsInProgress : Set[IViewText] = Set[IViewText]()
 

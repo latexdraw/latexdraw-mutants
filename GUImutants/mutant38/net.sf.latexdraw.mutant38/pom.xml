@@ -101,11 +101,36 @@
 			</plugin>
         </plugins>
   </build>
+    	<properties>
+		<malai.version>2.0-SNAPSHOT</malai.version>
+		<scala.version>2.11.2</scala.version>
+	    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+	</properties>
+	
+	<repositories>
+	    <repository>
+	        <id>mavenInriaSnapshot</id>
+	        <name>http://maven.inria.fr-snapshots</name>
+	        <url>http://maven.inria.fr/artifactory/malai-public-snapshot</url>
+	    </repository>
+		<repository>
+	        <id>mavenInriaRelease</id>
+	        <name>http://maven.inria.fr-releases</name>
+	        <url>http://maven.inria.fr/artifactory/malai-public-release</url>
+	    </repository>
+	</repositories>
+	
 	<dependencies>
 			<dependency>
 	            <groupId>org.scala-lang</groupId>
 	            <artifactId>scala-library</artifactId>
-	            <version>2.9.2</version>
+	            <version>${scala.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.scala-lang.modules</groupId>
+				<artifactId>scala-parser-combinators_2.11</artifactId>
+				<version>1.0.2</version>
 			</dependency>
 		    <dependency>
 		      <groupId>junit</groupId>
