@@ -13,4 +13,4 @@ The mutated code is the operation composeRectangleLikeToolbar().
 
 To produce the failure:
 1. Pass the mouse over the rectangle icon on the tool bar to show its tooltip.
-->The tooltip shows "Draw a square".
+ORACLE -> The tooltip shows "Draw a square".

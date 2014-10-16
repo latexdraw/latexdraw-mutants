@@ -14,5 +14,5 @@ The mutated code is the operation override def interimFeedback().
 To produce the failure:
 1. Load a template or a file
 1. Drag-and-drop on the drawing area to select a shape
--> The temporary rectangle is still visible at the end of the selection.
+ORACLE -> The temporary rectangle is still visible at the end of the selection.
 

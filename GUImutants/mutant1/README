@@ -14,5 +14,5 @@ The mutated code is the operation setRectangularShape.
 To produce the failure:
 1. Select the rectangle tool
 2. Drag-and-drop on the drawing area to create a shape
--> An ellipse is painted instead of a rectangle
+ORACLE -> An ellipse is painted instead of a rectangle
 

@@ -16,4 +16,4 @@ To produce the failure:
 2. Select a shape
 3. Select shadow property
 4. Modify its shadow properties into size or angle fields.
-->Changing the size field also modifies the angle field and vice-versa. 
+ORACLE -> Changing the size field also modifies the angle field and vice-versa. 

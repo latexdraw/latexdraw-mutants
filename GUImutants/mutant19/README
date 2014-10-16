@@ -15,4 +15,4 @@ To produce the failure:
 1. Import a template
 2. Select a shape
 3. Modify its border of properties by changing the color of the border.
--> The color of its border is not changed according the selected value.
+ORACLE -> The color of its border is not changed according the selected value.

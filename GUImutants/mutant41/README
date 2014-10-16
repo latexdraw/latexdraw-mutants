@@ -14,4 +14,4 @@ The mutated code is the operation paintViews.
 To produce the failure:
 1. Import a template
 2. Perform zooming in (e.g., 125%) by clicking on the spinner widget (or using shortcuts (crtl + mouse wheel) or entering the values on text field spinner).
--> The corresponding template presentation is incorrectly, a shape with zoom value 125% is smaller than 100%.
+ORACLE -> The corresponding template presentation is incorrectly, a shape with zoom value 125% is smaller than 100%.

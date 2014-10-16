@@ -16,4 +16,4 @@ To produce the failure:
 1. Import a template
 2. Selecting a shape
 3. Scaling a shape using any scale handler 
--> The shape cannot be scaled using scale handlers
+ORACLE -> The shape cannot be scaled using scale handlers

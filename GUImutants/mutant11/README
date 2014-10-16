@@ -14,4 +14,4 @@ The mutated code is the operation interimFeedback.
 To produce the failure:
 1. Import a template
 2. Scale a shape using the North, South, East, or West scaling handler 
--> The interim feedback is not provided (the cursor does not change)
+ORACLE -> The interim feedback is not provided (the cursor does not change)

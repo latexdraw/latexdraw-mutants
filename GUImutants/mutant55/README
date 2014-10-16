@@ -13,4 +13,4 @@ The mutated code is the operation composeEditMenu().
 
 To produce the failure:
 1. Select menu "Edit"
--> The menu item "cut" is not activated.
+ORACLE -> The menu item "cut" is not activated.

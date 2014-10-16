@@ -14,4 +14,4 @@ To produce the failure:
 1. Select a shape style in toolbar
 2. Drag and drop to draw a shape on canvas until appears the scroll bars
 3. Perform  the horizontal or vertically scroll by mouse wheel.
--> The scroll does not work.
+ORACLE -> The scroll does not work.

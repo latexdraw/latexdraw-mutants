@@ -14,4 +14,4 @@ The mutated code is the operation translate.
 To produce the failure:
 1. Select a shape style
 2. Draw a shape on canvas 
-->A line is drawn on top of canvas instead of the shape.
+ORACLE -> A line is drawn on top of canvas instead of the shape.

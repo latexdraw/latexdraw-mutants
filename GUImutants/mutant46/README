@@ -14,4 +14,4 @@ The mutated code is the operation LShape.
 To produce the failure:
 1. Select a shape
 2. Draw a shape on canvas 
-->The shape is drawn with a dashed line.
+ORACLE -> The shape is drawn with a dashed line.

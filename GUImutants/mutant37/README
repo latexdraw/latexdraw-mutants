@@ -13,6 +13,6 @@ The mutated code is the operation setEventableToInstruments().
 
 To produce the failure:
 1. Zoom in or zoom out by clicking on the spinner widget or using shortcuts (crtl + mouse wheel) or entering some values on text field spinner.
-->The zoom values are changed on the spinner widget but this action does not affect canvas.
+ORACLE -> The zoom values are changed on the spinner widget but this action does not affect canvas.
 
-Observation: Shortcuts do not work on Mac.
+Note: Shortcuts do not work on Mac.

@@ -15,4 +15,4 @@ To produce the failure:
 1. Import template
 2. Selecting a shape by drag-and-drop onto the drawing area
 3. Deleting a shape by using the widget "Delete".
-->The shape is not deleted.
+ORACLE -> The shape is not deleted.

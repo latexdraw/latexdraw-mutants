@@ -15,4 +15,4 @@ To produce the failure:
 1. Import a template
 2. Select a shape
 3. Delete the selected shape using the key 'delete'
--> The shape is not delete using the key 'delete'
+ORACLE -> The shape is not delete using the key 'delete'

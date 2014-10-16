@@ -13,4 +13,4 @@ The mutated code is the operation composeEllipseLikeToolbar().
 
 To produce the failure:
 1. Pass the mouse over the ellipse icon on tool bar.
-->The ellipse tooltip does not show up.
+ORACLE -> The ellipse tooltip does not show up.

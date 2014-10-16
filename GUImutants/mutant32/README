@@ -14,4 +14,4 @@ The mutated code is the operation setRectangularShape.
 To produce the failure:
 1. Select a triangle shape
 2. Drag and drop on canvas to draw a triangle
-->  The triangle is not drawn correctly. 
+ORACLE ->  The triangle is not drawn correctly. 

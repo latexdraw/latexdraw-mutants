@@ -14,4 +14,4 @@ The mutated code is the setEventableToInstruments().
 To produce the failure:
 1. Select any shape style in the tool bar
 2. Drag and drop to draw a shape on canvas 
--> The shape is not drawn.
+ORACLE -> The shape is not drawn.

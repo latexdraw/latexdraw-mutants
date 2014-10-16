@@ -14,4 +14,4 @@ The mutated code is the operation done()
 To produce the failure:
 1. Import a template
 2. Save the shape
--> There is no message (in status bar) about whether that drawing is saved or not.
+ORACLE -> There is no message (in status bar) about whether that drawing is saved or not.

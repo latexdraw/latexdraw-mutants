@@ -14,5 +14,5 @@ The mutated code is the operation setTempView.
 To produce the failure:
 1. Select the rectangle tool
 2. Drag-and-drop on the drawing area to draw a rectangle.
--> The expected temporary rectangle shown during the creation of a rectangle is not visible.
+ORACLE -> The expected temporary rectangle shown during the creation of a rectangle is not visible.
 

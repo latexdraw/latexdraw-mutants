@@ -18,4 +18,4 @@ To produce the failure:
 2. Select the shape
 3. Move the shape
 4. Perform undo action and then redo this action
--> The redo action does not lead to the correct state.
+ORACLE -> The redo action does not lead to the correct state.

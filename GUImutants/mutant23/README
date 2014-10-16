@@ -16,4 +16,4 @@ To produce the failure:
 2. Select the shape
 3. Resize the shape by drag and drop 
 4. Perform undo actions 
--> The action to undo the scaling does not work.
+ORACLE -> The action to undo the scaling does not work.

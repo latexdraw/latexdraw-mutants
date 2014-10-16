@@ -19,4 +19,4 @@ To produce the failure:
 2. Select the shape
 3. Rotate the shape
 4. Perform a undo action and then redo this action
--> The redo action does not work.
+ORACLE -> The redo action does not work.

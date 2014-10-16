@@ -13,5 +13,5 @@ The mutated code is the operation paintViews
 
 To produce the failure:
 1. Drag-and-drop onto the drawing area
--> The selection rectangle is not visible.
+ORACLE -> The selection rectangle is not visible.
 

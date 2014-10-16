@@ -13,6 +13,6 @@ The mutated code is the operation interactionStarts.
 
 To produce the failure:
 1. Select a line or closed bézier or bézier curves
-1. Draw a shape by using the minimal of clicks (e.g., two clicks for a simple line).
--> The shapes are not drawn correctly and the interaction is aborted when the right button is pressed. 
+2. Draw a shape by using the minimal of clicks (e.g., two clicks for a simple line).
+ORACLE -> The shapes are not drawn correctly and the interaction is aborted when the right button is pressed. 
 Workaround: It is necessary more clicks to draw the shapes.

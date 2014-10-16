@@ -12,4 +12,4 @@ The mutated file is package net.sf.latexdraw.ui.UIBuilder.
 The mutated code is the operation compose().
 
 To produce the failure:
--> Widget label is "Drawning" instead of "Drawing".
+ORACLE -> Widget label is "Drawning" instead of "Drawing".

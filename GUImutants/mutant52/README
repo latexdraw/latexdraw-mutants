@@ -15,4 +15,4 @@ To produce the failure:
 1. Select Text style
 2. Typing some text on canvas
 3. Press "ESC" key to abort
-->The text is not deleted (i.e. typing is not aborted).
+ORACLE -> The text is not deleted (i.e. typing is not aborted).

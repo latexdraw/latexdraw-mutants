@@ -14,5 +14,5 @@ The mutated code is the operation initialiseLinks().
 To produce the failure:
 1. Select Text mode on the tool bar
 2. Typing some text on canvas 
-2. Clicking on canvas 
--> The text is not added.
+3. Clicking on canvas 
+ORACLE -> The text is not added.

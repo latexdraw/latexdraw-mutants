@@ -12,4 +12,4 @@ The mutated file is package net.sf.latexdraw.ui.LFrame.
 The mutated code is the operation instantiateInstruments().
 
 To produce the failure:
-->The button zoom is so small that it is impossible to enter some value.
+ORACLE -> The button zoom is so small that it is impossible to enter some value.

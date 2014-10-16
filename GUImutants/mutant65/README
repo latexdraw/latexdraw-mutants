@@ -14,4 +14,4 @@ The mutated code is the operation initAction().
 To produce the failure:
 1. Select tab "PST"
 2. Select tab "Drawing"
--> The Drawing Pane does not appear in the Drawing tab but in the PST tab and vice-versa.
+ORACLE -> The Drawing Pane does not appear in the Drawing tab but in the PST tab and vice-versa.

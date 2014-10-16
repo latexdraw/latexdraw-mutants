@@ -12,4 +12,4 @@ The mutated file is package net.sf.latexdraw.glib.ui.LMagneticGrid.
 The mutated code is the operation setSize().
 
 To produce the failure:
-->The magnetic grid on Canvas is not displayed.
+ORACLE -> The magnetic grid on Canvas is not displayed.

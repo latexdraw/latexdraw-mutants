@@ -16,6 +16,4 @@ To produce the failure:
 2. Select the shape
 3. Modify its properties (e.g., border, double border, shadow, filling properties)
 4. Performing undo action
-->The actions regarding to undo the current properties is not performed step by step.
-
-Observation: Undo/Redo operations for Templates do not work.
+ORACLE -> The actions regarding to undo the current properties is not performed step by step.

@@ -15,3 +15,4 @@ To produce the failure:
 1. Import a template
 2. Select a shape
 3. Rotate a shape using the rotation handler 
+ORACLE -> The shape is not rotated

@@ -13,4 +13,4 @@ The mutated code is the operation PropertyChange() in the class ProgressListener
 
 To produce the failure:
 1. Open a file "testFile.svg"
--> There is no progress bar (in status bar) showing the status while that file is opened.
+ORACLE -> There is no progress bar (in status bar) showing the status while that file is opened.

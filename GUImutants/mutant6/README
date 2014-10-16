@@ -14,5 +14,5 @@ The mutated code is the operation Handler.
 To produce the failure:
 1. Load a template
 2. Drag-and-drop or press on the drawing area to select the rectangle
--> The handlers are not visible
+ORACLE -> The handlers are not visible
 

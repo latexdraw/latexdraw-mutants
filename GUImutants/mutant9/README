@@ -15,4 +15,4 @@ To produce the failure:
 1. Import a template
 2. Selecting a shape
 3. Scaling a shape by using a scaling handler 
--> The shape cannot be scaled using the N, S, W, SW, and NW handlers.
+ORACLE -> The shape cannot be scaled using the N, S, W, SW, and NW handlers.

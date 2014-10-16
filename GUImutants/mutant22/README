@@ -16,4 +16,4 @@ To produce the failure:
 2. Select the shape
 3. Rotate the shape by drag and drop or entering the angle of rotation 
 4. Perform undo actions 
--> The action to undo the rotations does not work.
+ORACLE -> The action to undo the rotations does not work.

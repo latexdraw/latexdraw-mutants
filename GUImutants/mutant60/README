@@ -14,4 +14,4 @@ The mutated code is the operation initActionOnDrawingPanel().
 To produce the failure:
 1. Select tab "PST"
 2. Select tab "Drawing"
--> The zoom spinner does not show up anymore.
+ORACLE -> The zoom spinner does not show up anymore.

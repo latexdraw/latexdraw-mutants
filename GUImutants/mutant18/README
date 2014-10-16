@@ -14,4 +14,4 @@ The mutated code is the operation updateAction() in the DnD2AddShape class
 To produce the failure:
 1. Clicking on toolbar to select one of the following shapes: rectangle, square, circle, ellipse, triangle, rhombus, arc.
 2. Draw the shape on canvas by drag and drop
-->The shape is not drawn, only a single dot.
+ORACLE -> The shape is not drawn, only a single dot.

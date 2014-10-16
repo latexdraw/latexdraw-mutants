@@ -14,4 +14,4 @@ The mutated code is the operation composeDrawingMenu().
 To produce the failure:
 1. Open Draw menu
 2. Click on the Unit
--> The Unit submenu (i.e. cm, inch) is not show up. 
+ORACLE -> The Unit submenu (i.e. cm, inch) is not show up. 

@@ -5,12 +5,13 @@ Failure description: Drawing shapes that need DnD to add them (DnD2AddShape) doe
 WIMP/post-WIMP: post-WIMP
 Ad-hoc widgets involved: yes
 interactions: DnD, button click
-Test case length: 2 (Select Shape, Add Shape)
+Test case length: 2 (Select shape type to add, Add Shape)
 Minimal number of events to perform: 4 (press button, press canvas, move canvas, release canvas)
 
 The mutated file is package net.sf.latexdraw.instruments.Pencil
 The mutated code is the operation initialiseLinks().
 
 To produce the failure:
-1. Drag and drop to draw a shape (e.g. rectangle, square, ellipse, circle, rhombus, triangle, arc, freehand) on canvas 
--> Drag and drop on canvas to draw those shapes does not work
+1. Click on a button to select a kind of shapes to draw (rectangle, ellipse, etc.)
+2. Drag and drop to draw a shape (e.g. rectangle, square, ellipse, circle, rhombus, triangle, arc, freehand) on canvas 
+ORACLE -> No shape is added and painted

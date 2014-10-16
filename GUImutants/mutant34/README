@@ -13,4 +13,4 @@ The mutated code is the operation getZoomIncrement().
 
 To produce the failure:
 1. Zoom in or zoom out by clicking on the spinner widget
- -> The zoom values does not change on the spinner widget.
+ORACLE -> The zoom values does not change on the spinner widget.

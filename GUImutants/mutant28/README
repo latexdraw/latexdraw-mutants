@@ -12,5 +12,6 @@ The mutated file is package package package net.sf.latexdraw.instruments.Pencil
 The mutated code is the operation initialiseLinks().
 
 To produce the failure:
-1. Draw one of the following shapes: joined lines, polygon, closed Bézier curve or Bézier curve (shapes that need a click on canvas before)
--> Those shapes are not drawn.
+1. Click on a button to select a kind of shapes: joined lines, polygon, closed Bézier curve or Bézier curve
+2. Draw one of the following shapes: joined lines, polygon, closed Bézier curve or Bézier curve (shapes that need a click on canvas before)
+ORACLE -> No shape is added and painted.

@@ -12,4 +12,4 @@ The mutated file is net.sf.latexdraw.instruments.ShaperDeleter.
 The mutated code is the operation setActivated.
 
 To produce the failure:
--> The button 'delete', that should be visible but disable, is not visible.
+ORACLE -> The button 'delete', that should be visible but disable, is not visible.

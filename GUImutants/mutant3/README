@@ -14,5 +14,5 @@ The mutated code is the operation update.
 To produce the failure:
 1. Load the test file (testFile.svg)
 2. Select the loaded shape
--> The data displayed in the rotation field is in radian.
+ORACLE -> The data displayed in the rotation field is in radian.
 

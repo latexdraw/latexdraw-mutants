@@ -14,4 +14,4 @@ The mutated code is the operation setActivated.
 To produce the failure:
 1. Import a template
 2. Select a shape
--> The widget "Delete" is not activated.
+ORACLE -> The widget "Delete" is not activated.

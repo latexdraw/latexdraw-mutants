@@ -5,13 +5,13 @@ Failure description: The link (widget-to-action) to draw the selected shapes is 
 WIMP/post-WIMP: post-WIMP
 Ad-hoc widgets involved: yes
 interactions: DnD, button click
-Test case length: 2 (Select shape, Add a shape)
-Minimal number of events to perform: 4 (press button, press canvas (select), move canvas, release canvas)
+Test case length: 2 (press button, press button)
+Minimal number of events to perform: 2 (press button)
 
 The mutated file is package net.sf.latexdraw.instruments.EditingSelector
 The mutated code is the operation initAction() in the ButtonPressed2DefineStylePencil class
 
 To produce the failure:
 1. Selecting any kind of shape (e.g., rectangle, square, triangle, etc.)
-2. Drag-and-drop on canvas to draw the selected shape
--> The rectangle shape always is drawing.
+2. Selecting another kind of shape
+ORACLE -> The tool selected in 1. is still selected (the button is still selected).

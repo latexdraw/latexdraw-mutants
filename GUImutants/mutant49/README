@@ -14,4 +14,4 @@ The mutated code is the operation interactionStarts in the MultiClic2AddShape cl
 To produce the failure:
 1. Select a polygon shape.
 2. Drawing a polygon with 3 sides (1 left click + DnD; 1 left click + DnD; 1 right click).
--> When the right button is pressed the polygon is not created and the interaction is aborted.
+ORACLE -> When the right button is pressed the polygon is not created and the interaction is aborted.

@@ -14,4 +14,4 @@ The mutated code is the operation paintViews.
 To produce the failure:
 1. Select a shape style
 2. Draw a shape on canvas by drag and drop.
-->The shape disappears after releasing the mouse button to complete the drawing. However, when the zoom is changed the shape appears.
+ORACLE -> The shape disappears after releasing the mouse button to complete the drawing. However, when the zoom is changed the shape appears.
